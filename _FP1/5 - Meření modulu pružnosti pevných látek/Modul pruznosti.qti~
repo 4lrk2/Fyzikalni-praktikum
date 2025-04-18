@@ -1,0 +1,300 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	Python
+<windows>	16
+<folder>	Mereni modulu pruznosti tahu - PRODLOUZENI DRATU	5/20/2024 10:32:44 PM	
+<open>1</open>
+<note>
+Notes1	5/20/2024 10:29:17 PM
+geometry	522	1	1020	489	
+WindowLabel		2
+AutoExec	0
+<LineNumbers>1</LineNumbers>
+<tab>
+<active>1</active>
+<title>untitled</title>
+<content>
+Postup měření
+• Stanovíme hmotnosti zatěžovacích závaží na digitálních vahách. Rozhodneme, jestli je nutné
+počítat s individuální hmotností každého závaží, nebo jestli vzhledem k chybám měření stačí počítat s průměrnou hmotností.
+
+• Průměr drátu změříme v různých místech mikrometrem. Měříme 10×.
+Tabulka - PRUMERDRATU
+
+
+• Počáteční délka drátu byla změřena laserovým dálkoměrem a má hodnotu 1567 mm.
+
+
+• Polohu dolního konce drátu měříme digitálním úchylkoměrem, jehož hrot zapadá do malé
+jamky na spodní straně závaží. 
+Nejprve úchylkoměr vynulujeme (∆l = 0). 
+Postupně přidáváme jednotlivá závaží a naměřené hodnoty m, ∆l zapisujeme do tabulky PRODLOUZENI
+Hrot úchylkoměru udržujeme v jamce. Poté závaží zase postupně odebíráme.
+
+Naměřené hodnoty vyneseme do grafu závislosti ∆l(m). Grafem proložíme přímku a určíme
+její směrnici k ± U(k). Modul pružnosti drátu E pak vypočteme ze vztahu (8). Stanovíme
+nejistotu modulu pružnosti E.
+
+• Výslednou hodnotu modulu pružnosti E porovnáme s údajem z tabulek
+</content>
+</tab>
+</note>
+<table>
+PRUMERDRATU-mikrometr	30	1	5/20/2024 10:29:08 PM
+geometry	1553	1	285	281	
+header	Prumer [mm][X]
+ColWidth	121	
+<com>
+</com>
+ColType	0;0/13
+ReadOnlyColumn	0
+HiddenColumn	0
+Comments		
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+HmotnostiZavazi	30	2	5/20/2024 10:35:18 PM
+geometry	0	0	518	597	
+header	m [g][X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+PRODLOUZENI	30	3	5/20/2024 10:38:38 PM
+geometry	43	622	445	220	
+header	m [g][X]	d+ [mm][Y]	d- [mm][Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	5/20/2024 10:56:49 PM
+geometry	1838	0	621	480	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+</folder>
+<folder>	Modul pruznosti v tahu z pruhybu - NOSNIK	5/20/2024 10:41:19 PM	
+<open>1</open>
+<note>
+Notes2	5/20/2024 10:41:47 PM
+geometry	1169	62	1266	806	active
+WindowLabel		2
+AutoExec	0
+<LineNumbers>1</LineNumbers>
+<tab>
+<active>1</active>
+<title>untitled</title>
+<content>
+Geometrické rozměry nosníku změříme obvyklými měřidly. Vybereme si taková měřidla, aby
+příspěvek k celkové nejistotě od každé měřené veličiny byl přibližně stejný a měl takovou velikost, 
+aby celková nejistota odpovídala požadované přesnosti měření. Každý rozměr měříme 10×.
+a mikrometrem
+b posuvkou
+l asi jirim
+
+
+
+• Nosník s navlečeným třmenem položíme na břity stojanu. Třmen umístíme doprostřed do
+kontaktu s digitálním úchylkoměrem. (Pozor, musíme zajistit, aby pracovní bod digitálního
+úchylkoměru umožnil proměření průhybu v celém rozsahu povolených zátěží.)
+
+• Třmen zatěžujeme postupným přidáváním závaží a odečítáme velikost prohnutí nosníku.
+Váznutí mechanizmu uvolňujeme velmi lehkým poklepem na stojan.
+
+• Měříme průhyb, jak při postupném zatěžování, tak i při postupném odlehčování. h+ i h-
+
+• Dvojice naměřených hodnot závislosti y(m) vyneseme do grafu a proložíme lineární závislostí. Posoudíme, zda je směrnice rozdílná při zatěžování a odlehčování. Srovnáním směrnice
+s teoretickou hodnotou získanou úpravou rovnice (9) do tvaru y = k · m stanovíme Youngův
+modul pružnosti.
+</content>
+</tab>
+</note>
+<table>
+Ocel-dimenze	30	2	5/20/2024 10:43:38 PM
+geometry	0	0	582	220	
+header	vyska - a [mm] [Y]	Sirka - b [mm][Y]
+ColWidth	127	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+Al-slitina-dimenze	30	2	5/20/2024 10:45:48 PM
+geometry	3	221	582	220	
+header	vyska - a [mm] [Y]	Sirka - b [mm][Y]
+ColWidth	127	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+Mosaz-dimenze	30	2	5/20/2024 10:47:01 PM
+geometry	7	443	582	220	
+header	vyska - a [mm] [Y]	Sirka - b [mm][Y]
+ColWidth	127	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+CKompozit-dimenze	30	2	5/20/2024 10:47:25 PM
+geometry	7	668	582	220	
+header	vyska - a [mm] [Y]	Sirka - b [mm][Y]
+ColWidth	127	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+Ocel-pruhyb	30	3	5/20/2024 10:47:48 PM
+geometry	582	0	445	220	
+header	m [g][X]	h+ [mm][Y]	h- [mm][Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+Al-slitina-pruhyb	30	3	5/20/2024 10:48:20 PM
+geometry	585	220	445	220	
+header	m [g][X]	h+ [mm][Y]	h- [mm][Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+Mosaz-pruhyb	30	3	5/20/2024 10:48:33 PM
+geometry	589	440	445	220	
+header	m [g][X]	h+ [mm][Y]	h- [mm][Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+Ckompozit-pruhyb	30	3	5/20/2024 10:48:45 PM
+geometry	594	665	445	220	
+header	m [g][X]	h+ [mm][Y]	h- [mm][Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+</data>
+</table>
+</folder>
+<folder>	Modul pruznosti ve smyku - koule	5/20/2024 11:13:41 PM		current
+<open>1</open>
+<note>
+Notes3	5/20/2024 11:13:58 PM
+geometry	687	1	839	519	
+WindowLabel		2
+AutoExec	0
+<LineNumbers>1</LineNumbers>
+<tab>
+<active>1</active>
+<title>untitled</title>
+<content>
+• Geometrické rozměry drátu a koule změříme vhodnými mechanickými měřidly (výběr se řídí
+pravidly jako u průhybu). Každý rozměr měříme 10×. Délku závěsu změříme katetometrem.
+Kouli nenadzvedáváme! Pokud by se utrhla, mohla by způsobit vážné zranění.
+• Hmotnost koule je napsána na kouli.
+• Kouli natočíme kolem svislé osy a uvolníme. Úhlovou výchylku koule z rovnovážné polohy
+je třeba omezit na úhly, které odpovídají pružné torzní deformaci. Doporučená počáteční
+výchylka je 45◦ až 90◦
+.
+• Po uvolnění koule koná torzní kmity. Opakovaně (10×) změříme dobu např. 10 kmitů, tj.
+10 T.
+• Z rovnice (10) stanovíme modul pružnosti v torzi G. Před výpočtem je vhodné vztah upravit
+tak, aby v něm vystupovaly skutečně přímo měřené veličiny
+</content>
+</tab>
+</note>
+<table>
+Table1	30	3	5/20/2024 11:18:06 PM
+geometry	0	0	596	488	active
+header	R koule[X]	r dratu[Y]	10Kmitu[Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+</data>
+</table>
+</folder>
+<open>1</open>

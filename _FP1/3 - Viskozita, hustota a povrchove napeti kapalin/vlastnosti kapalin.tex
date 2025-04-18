@@ -1,0 +1,391 @@
+% Hlavicka pro protokoly z fyzikalniho praktika.
+% Verze pro: LaTeX
+% Verze hlavicky: 22. 2. 2007
+% Autor: Ustav fyziky kondenzovanych latek
+% Ke stazeni: www.physics.muni.cz/ufkl/Vyuka/
+% Licence: volne k pouziti, nejlepe k vcasnemu odevzdani protokolu z Vaseho mereni.
+
+
+\documentclass[czech,11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{placeins}
+
+
+
+
+%%% Nemente:
+\usepackage[margin=2cm]{geometry}
+\newtoks\jmenopraktika \newtoks\jmeno \newtoks\datum
+\newtoks\obor \newtoks\skupina \newtoks\rocnik \newtoks\semestr
+\newtoks\cisloulohy \newtoks\jmenoulohy
+\newtoks\tlak \newtoks\teplota \newtoks\vlhkost
+%%% Nemente - konec.
+
+
+%%%%%%%%%%% Doplnte pozadovane polozky:
+
+\jmenopraktika={Fyzikální praktikum 1}  % nahradte jmenem vaseho predmetu
+\jmeno={Teodor Duraković}            % nahradte jmenem mericiho
+\datum={24.~dubna 2024}        % nahradte datem mereni ulohy
+\obor={F}                     % nahradte zkratkou vami studovaneho oboru
+\skupina={St 8:00}            % nahradte dobou vyuky vasi seminarni skupiny
+\rocnik={I}                  % nahradte rocnikem, ve kterem studujete
+\semestr={II}                 % nahradte semestrem, ve kterem studujete
+
+\cisloulohy={3}               % nahradte cislem merene ulohy
+\jmenoulohy={Měření viskozity, hustoty a povrchového napětí kapalin} % nahradte jmenem merene ulohy
+
+\tlak={97 \,\rm 814}                   % nahradte tlakem pri mereni (v hPa)
+\teplota={20.3}               % nahradte teplotou pri mereni (ve stupnich Celsia)
+\vlhkost={33.5}               % nahradte vlhkosti vzduchu pri mereni (v %)
+
+%%%%%%%%%%% Konec pozadovanych polozek.
+
+
+%%%%%%%%%%% Uzitecne balicky:
+
+%%%%%% Zamezeni parchantu:
+\widowpenalty 10000 \clubpenalty 10000 \displaywidowpenalty 10000
+%%%%%% Parametry pro moznost vsazeni vetsiho poctu obrazku na stranku
+\setcounter{topnumber}{3}	  % max. pocet floatu nahore (specifikace t)
+\setcounter{bottomnumber}{3}	  % max. pocet floatu dole (specifikace b)
+\setcounter{totalnumber}{6}	  % max. pocet floatu na strance celkem
+\renewcommand\topfraction{0.9}	  % max podil stranky pro floaty nahore
+\renewcommand\bottomfraction{0.9} % max podil stranky pro floaty dole
+\renewcommand\textfraction{0.1}	  % min podil stranky, ktery musi obsahovat text
+\intextsep=8mm \textfloatsep=8mm  %\intextsep pro ulozeni [h] floatu a \textfloatsep pro [b] or [t]
+
+% Tecky za cisly sekci:
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}.}
+% Jednopismenna mezera mezi cislem a nazvem kapitoly:
+\makeatletter \def\@seccntformat#1{\csname the#1\endcsname\hspace{1ex}} \makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zacatek dokumentu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Nemente:
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\thispagestyle{empty}
+	
+	{
+		\begin{center}
+			\sf 
+			{\Large Ústav fyziky a technologií plazmatu Přírodovědecké fakulty Masarykovy univerzity} \\
+			\bigskip
+			{\huge \bfseries FYZIKÁLNÍ PRAKTIKUM} \\
+			\bigskip
+			{\Large \the\jmenopraktika}
+		\end{center}
+		
+		\bigskip
+		
+		\sf
+		\noindent
+		\setlength{\arrayrulewidth}{1pt}
+		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l}
+			\large {\bfseries Zpracoval:}  \the\jmeno & \large  {\bfseries Naměřeno:} \the\datum\\[2mm]
+			\large  {\bfseries Obor:} \the\obor  \hspace{40mm}  {\bfseries Skupina:} \the\skupina %
+			%{\bfseries Ročník:} \the\rocnik \hspace{5mm} {\bfseries Semestr:} \the\semestr  
+			&\large {\bfseries Testováno:}\\
+			\\
+			\hline
+		\end{tabular*}
+	}
+	
+	\bigskip
+	
+	{
+		\sf
+		\noindent \begin{tabular}{p{3cm} p{0.6\textwidth}}
+			\Large  Úloha č. {\bfseries \the\cisloulohy:} \par
+			\smallskip
+			$T=\the\teplota$~$^\circ$C \par
+			$p=\the\tlak$~Pa \par
+			$\varphi=\the\vlhkost$~\%
+			&\Large \bfseries \the\jmenoulohy  \\[2mm]
+		\end{tabular}
+	}
+	
+	\vskip1cm
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% konec Nemente.
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Zacatek textu vlastniho protokolu
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	
+	\section{Zadání}
+	Určit \\
+	1. teplotní závislost viskozity vody Ubbelohdeho viskozimetrem\\
+	2. viskozitu vody metodou výtoku z Mariottovy láhve\\
+	3. hustotu lihu metodou a) pyknometrickou a b) ponorného tělíska\\
+	4. povrchové napětí destilované vody a lihu metodou du Noüyho metodou kroužku\\
+	5. kontaktní úhly vody a methylen jodidu.
+	
+	\section{Postup, metody měření}
+	\subsection{Viskozita vody}
+	\subsubsection{Metoda Ubbelohdeho viskozimetru}
+	Ubbelhodeho viskozimetr se používá ke stanovení kinematické viskozity kapalin. Platí vztah:
+	\begin{equation}
+		\nu = Kt
+	\end{equation}
+	kde $\nu$ je kinematická viskozita, $K$ časová konstanta viskosimetru a $t$ čas změny hladiny kapaliny \\v trubici mezi dvěma vyznačenými úrovněmi. Měření provádíme třikrát, při teplotě kapaliny cca $20, 30$ a $40 ^\circ C$.
+	\subsubsection{Metoda Mariottovy láhve}
+	Mariottova láhev zajišťuje konstantní tlakový spád mezi konci trubice. Proudění lze při výtoku považovat za laminární a proto platí vztah:
+	\begin{equation}
+		\eta = \frac{\pi R^4 pt}{8VL} = \frac{\pi \rho R^4 \, \rho g h \,t}{8mL}
+	\end{equation}
+	kde $R$ je poloměr trubice, $p$ je rozdíl tlaků mezi konci trubice, $t$ čas, za který vyteče z nádoby objem  $V$, $L$ je délka trubice a $h$ výškový rozdíl mezi trubicí a kapilárou lahve.
+	\subsection{Hustota lihu}
+	\subsubsection{Pyknometrická metoda}
+	Metoda pyknometru je založena na tom, že nádoba u referenční i zkoumané kapaliny pojme identický objem. Platí:
+	\begin{equation}
+		\rho = (\rho_k - \rho_v) \frac{ m - m_p}{m_k - m_p} + \rho_v
+	\end{equation}
+	kde $\rho_k$ je hustota kalibrační kapaliny (v našem případě destilované vody), $\rho_v$ hustota vzduchu,\\ $m_p$ hmotnost pyknometru, $m_k$ hmotnost kalibrační kapaliny a $m$ hmotnost lihu. 
+	\subsubsection{Metoda ponorného tělíska}
+	Na váhy zavěsíme závaží, váhy vytárujeme a kapalinu ve válci postavíme pod váhy. Při plně ponořeném závaží zaznamenáme měřenou hmotnost při obou kapalinách (měřené a kalibrační). 
+	Zde aplikujeme formuli
+	\begin{equation}
+		\rho = \frac{m}{m_k} \rho_i
+	\end{equation}
+	\subsection{Povrchové napětí}
+	\subsubsection{Metoda kroužku}
+	V souladu s návodem měříme sílu při odtržení kroužku. Používáme vztah
+	\begin{equation}
+		\sigma = \frac{F_{max}}{4\pi R} \cdot f
+	\end{equation}
+	kde $F$ je maximální síla při odtržení kroužku, $2\pi R$ je obvod kroužku a $f$ je Harkins-Jordanův koeficient, jehož hodnota činí přibližně $f = 0.77$.
+	\subsubsection{metoda kontaktního úhlu}
+	Měríme dispersní složku povrchové energie vody a kalibrační kapaliny. Používáme formuli
+	\begin{equation}
+		\frac{\sigma_{\mathrm{H}_2 \mathrm{O}}^{l w}}{\sigma_{\mathrm{H}_2 \mathrm{O}}}=\frac{\sigma_{k a l}^{l w}}{\sigma_{k a l}} \frac{\sigma_{\mathrm{H}_2 \mathrm{O}}}{\sigma_{k a l}}\left(\frac{1+\cos \theta_{\mathrm{H}_2 \mathrm{O}}}{1+\cos \theta_{k a l}}\right)^2
+	\end{equation}
+	kde $\sigma_k$ jsou jmenovité hodnoty povrchové energie vody a kalibrační kapaliny, $\sigma ^{lw}_k$ jsou Lifshitz - van der Waalsovy složky povrchového napětí obsahující coulombickou, indukční a dispersní složku povrchové energie. $\Theta_k $ značí kontaktní úhly na kapkách přichycených na teflonovém povrchu$^{[3]}$.
+	\section{Měření}
+	\subsection{Viskozita vody}
+	\subsubsection{Ubbelohdeho viskozimetr}
+	Pro kalkulaci používáme vztah (1), časová konstanta pro použitý viskozimetr je rovna \\ $K = 1.063 \cdot 10^{-3 } \,\rm mm^2 \,s^{-2},$ $ r(K) = 0.65 \% \, (p \,95\%)$ 
+	
+   Získáváme:
+   	
+   	\begin{center}
+   		
+   	\begin{tabular}{c|c|c}
+   		\hline
+   		T [°C] & t [s] & $\eta \,\rm [mm^2 s^-1]$ \\
+   		21.0   & 947.9 & $ 1.008 \pm 0.007$ \\
+   		28.8   & 776.4 & $0.825 \pm 0.005$  \\
+   		38.9   & 628.3 & $0.668 \pm 0.004$ 
+   	\end{tabular}
+   	
+   	\end{center}
+   	
+   	\subsubsection{Mariottova láhev}
+   	Měřením získáváme následující hodnoty:
+   	\begin{center}
+   		\begin{tabular}{l|l}
+   		\hline
+   		
+   		R      & $0.570 \pm 0.001 \,\rm mm$  \\
+   		m      & $74.190 \pm 0.003 \,\rm g$  \\
+   		L      & $165.0 \pm 0.5 \,\rm mm$    \\
+   		t      & $319.86 \pm 0.3 \,\rm s$    \\
+   		h      & $112.00 \pm 0.05 \,\rm mm$  \\
+   		$\rho^{[1]}$  & $0.9982 \,\rm g.cm^{-3}$        
+   	\end{tabular}
+   	
+   	\end{center}
+   Po vložení hodnot do formule (2) získáváme hodnotu $\eta = 1.186 \pm 0.009 \,\rm mPa.s$.
+   \subsection{Hustota lihu}
+   \subsubsection{Pyknometrická metoda}
+   Měříme hodnoty:
+   \begin{center}
+   	\begin{tabular}{l|l}
+   		\hline
+   		$m_p$    & $23.868 \pm 0.003 \,\rm g$ \\
+   		$m_k$    & $74.042 \pm 0.003 \,\rm g$ \\
+   		$m$      & $64.070 \pm 0.003 \,\rm g$ \\
+   		$\rho_v ^{[2]}$ & $0.00116 \,\rm g.cm^{-3}$       \\
+   		$\rho_k ^{[1]}$ & $0.9982 \,\rm g.cm^{-3}$     \\
+   	\end{tabular}
+   \end{center}
+   Po aplikaci formule (3) získáváme: $\rho = 800.04 \pm 0.08 \,\rm kg . m^{-3}$.
+   	
+   \subsubsection{Metoda ponorného tělíska}
+   Získáváme hodnoty:
+   \begin{center}
+   	\begin{tabular}{l|l}
+   		\hline
+   		$m$      & $3.828 \pm 0.003 \,\rm g$ \\
+   		$m_k$    & $4.814 \pm 0.003 \,\rm g$ \\
+   		$\rho_k^{[1]}$ & $0.9982 \,\rm g.cm^{-3}$   
+   	\end{tabular}
+   \end{center}
+   Po dosazení do formule (4) získáváme $\rho = 793.7 \pm 0.8 \,\rm kg. m^{-3}$.
+   \subsection{Povrchové napětí}
+   \subsubsection{Metoda kroužku}
+   Získáváme:
+   
+   \begin{center}
+   	\begin{tabular}{c|c}
+   		\hline
+   		$F_{max} \,\rm $ - líh [mN] & $F_{max} \,\rm - voda$ [mN]\\ 
+   		\hline
+   		11.76               & 31.79                \\
+   		11.50               & 32.15                \\
+   		11.06               & 33.01                \\
+   		11.68               & 34.73                \\
+   		12.34               & 34.17                \\
+   		11.96               & 33.86                \\
+   		10.18               & 35.20                \\
+   		10.54               & 34.75                \\
+   		11.82               & 34.85                \\
+   		11.62               & 34.60                \\
+   		11.15               & 33.50               
+   	\end{tabular}
+   \end{center}
+   Po dosazení do formule (5) spolu s poloměrem kroužku $R = 29 \pm 0.05\,\rm mm$ získáváme hodnoty:\\ $\sigma_{lih} = 24.1 \pm 0.4 \,\rm mN.m^{-1}$ a $\sigma_{voda} = 71.6 \pm 0.7 \,\rm mN.m^{-1}$
+   
+   
+   \subsubsection{Metoda kontaktního úhlu}
+   Při použití glycerolu jakožto kalibrační kapaliny získáváme
+   
+   \begin{center}
+   	\begin{tabular}{l|l}
+   	\hline
+   	$\Theta_{H_2O}[^\circ]$ & $\Theta_{kal} [^\circ]$ \\
+   	77.7                    & 61.3                    \\
+   	72.6                    & 54.3                    \\
+   	75.4                    & 57.7                    \\
+   	70.8                    & 56.8                    \\
+   	71.6                    & 69                     
+   \end{tabular}
+   \end{center}
+   
+   Po dosazení průměrných hodnot do formule (6) získáváme: $\sigma ^{lw}_{H_2O} = 32.02 \,\rm mN.m^{-1}$
+   
+	
+	\section{Závěr}
+	Pro viskozitu vody získáváme metodou Ubbelohdeho viskozimetru uspokojivé výsledky, u Mariottovy láhve se však výsledek výrazně odchyluje od očekáváného. Hustota lihu je při obou použitých metodách měření v očekávaných mezích při očekáváné přesnosti. Povrchové napětí vody i lihu je při metodě měření kroužkem blízké tabulkovým hodnotám, u metody kontaktního úhlu se však měřená hodnota od hodnoty tabulkové odchyluje, což připisujeme zejména nepřesnosti při měření úhlu a kontaminaci vzorků.
+	
+	
+	\section{Použitý kód}
+	{\tiny \begin{verbatim}
+		from uncertainties import *
+		import numpy as np
+		
+		K = ufloat(1.063 *10**(-3), 6.9095*10**(-6))
+		
+		# eta = K t
+		
+		# Define the array of ufloat values for t
+		t_array = np.array([ufloat(947.9, 0.1), ufloat(776.4, 0.1), ufloat(628.3, 0.1)])
+		
+		# Calculate nu for every t
+		nu_array = K * t_array
+		
+		# Print the nu values
+		for nu in nu_array:
+		print(nu)
+		
+		#Mariott
+		
+		h1 = ufloat(16.17, 0.006)
+		h2 = ufloat(16.20, 0.006)
+		h3 = ufloat(16.20, 0.006)
+		
+		d1 = ufloat(5.0, 0.006)
+		d2 = ufloat(4.98, 0.006)
+		d3 = ufloat(4.99, 0.006)
+		#vše v kg, m
+		R = ufloat(0.570e-3, 0.001e-3)
+		h = (h1+h2+h3 - d1 -d2 -d3)/300
+		m = ufloat(74.190e-3, 0.003e-3)
+		L = ufloat(16.5e-2, 0.05e-2)
+		t = ufloat(319.86, 0.3)
+		rho = ufloat(0.9982e3, 0)	
+		g = ufloat(9.81, 0)
+		
+		
+		eta = ((np.pi * rho**2 *R**4 * g * h*t)/(8 * m * L))
+		print(eta*1000)
+		
+		#hustota-pyknometr-metoda
+		
+		mp = ufloat(23.868, 0.003)
+		mk = ufloat(74.042, 0.003)
+		m = ufloat(64.070, 0.003)
+		
+		mk = mk - mp
+		m = m - mp
+		print (mk, m)
+		rhok = ufloat(0.9982, 0)
+		rhov = ufloat(0.001157, 0)
+		
+		rho = (rhok - rhov) * ((m )/(mk)) + rhov
+		print(rho*1000)
+		
+		#hustota-ponorna metoda
+		m = ufloat(3.828, 0.003)
+		mk = ufloat(4.814, 0.003)
+		rhok = ufloat(0.9982, 0)
+		
+		rho = m/mk * rhok
+		print(rho*1000)
+		
+		#Viskosita - krouzek
+		
+		Flih = ufloat(11.42, 0.19)
+		Fvoda = ufloat(33.87, 0.34)
+		R = ufloat (58.0, 0.1)
+		
+		sigmalih = (Flih/(2*np.pi*R)) * 0.77
+		print(sigmalih*1000)
+		sigmavoda = Fvoda/(2*np.pi*R) * 0.77
+		print(sigmavoda*1000)
+	\end{verbatim}}
+
+	
+	\section{Zdroje}
+	[1] Water density calculator [on-line] \\
+	Dostupný z WWW: https://www.omnicalculator.com/physics/water-viscosity      \newline                  
+	[2] Air density calculator [on-line] \\
+	Dostupný z WWW: https://www.omnicalculator.com/physics/air-density
+	[3] ŠTYKS, Martin, MĚRĚNÍ KONTAKTNÍHO ÚHLU A POVRCHOVÉ ENERGIE NA POVRCHU POVLAKŮ BETA-FOSFOREČNANU	VÁPENATÉHO
+	dostupné on-line: [https://dspace.cvut.cz/bitstream/handle/10467/103553/F2-BP-2022-Styks-Martin-BP\_STYKS\_MARTIN.pdf]
+	
+	% Nakonec nezapomeňte projet text programem vlna nebo vlnka, např.
+	% 	vlna -m -l -n mojeuloha.tex
+	% nebo zkontrolovat a opravit jednopísmenné předložky na koncích řádků ručně.
+	
+\end{document}

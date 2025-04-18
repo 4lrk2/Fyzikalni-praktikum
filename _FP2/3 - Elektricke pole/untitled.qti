@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc13" dpi="120" arch="Win64" script="muParser" windows="2" expand="1">
+	<window type="1" name="Table1" date="2460597.7591246" x="0" y="0" w="472" h="531">
+		<tab rows="30" cols="20" labels="0">
+			<col name="x [cm]" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.26;0.08;0.25;5.03;10.12;15.98;-4.85;-9.92;-14.82;"/>
+			<col name="2.5V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="-14.88;14.87;-0.42;-0.31;-1.03;-1.69;-0.31;0.03;-0.12;"/>
+			<col name="3" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.22;5.14;10.13;14.84;-4.76;-9.74;-14.84;2.84;7.58;12.52;-2.52;-7.01;-12.18;"/>
+			<col name="2.0V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="-4.35;-5.44;-6.72;-8.01;-4.91;-5.8;-7.76;-4.59;-5.98;-7.27;-4.72;-5.14;-6.63;"/>
+			<col name="5" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.16;2.79;5.18;7.62;10.1;12.75;15.17;-2.4;-4.82;-7.38;-9.97;-12.46;-14.65;"/>
+			<col name="1.5V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="-8.03;-8.42;-9.02;-10.32;-11.85;-13.36;-14.57;-8.63;-9.42;-10.87;-12.87;-15.01;-16.23;"/>
+			<col name="7" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.28;2.76;5.23;8.12;10.44;-2.48;-4.79;-6.29;-6.16;9.11;6.7;-5.54;"/>
+			<col name="1.0V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="-10.74;-11.25;-12.96;-17.78;-23.6;-11.69;-13.88;-17.76;-20.74;-19.71;-14.81;-15.59;"/>
+			<col name="9" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.19;2.64;3.35;2.97;1.52;0.11;-1.99;-2.53;-1.65;"/>
+			<col name="0.5V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="-12.47;-13.83;-15.41;-17.13;-18.48;-18.84;-17.41;-15.26;-13.36;"/>
+			<col name="11" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="-0.29;3.82;7.52;10.16;13.41;15.91;1.99;-2.51;-4.51;-7.42;-9.73;-12.15;-14.93;11.77;"/>
+			<col name="3.0V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="4.59;4.55;4.85;5.12;5.3;5.51;4.22;4.43;4.83;5.35;5.7;6.17;6.77;4.91;"/>
+			<col name="13" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.15;3.15;5.09;7.43;10.22;12.17;15.24;-2.25;-4.68;-7.74;-9.36;-12;-10.7;"/>
+			<col name="3.5V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="8.21;8.27;8.77;9.78;11.41;12.34;13.8;8.34;9.22;10.75;12.14;14.08;13.03;"/>
+			<col name="15" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.24;2.99;5;5.96;6.43;6.65;7.23;-1.79;-4.73;-3.05;-5.12;-5.95;-6.16;-6.28;"/>
+			<col name="4.0V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="10.81;11.46;13.09;14.74;16.79;18.33;20.63;10.99;13.51;11.84;14.44;16.43;18.6;20.45;"/>
+			<col name="17" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.21;2.1;2.96;2.05;0.23;-1.93;-2.44;-1.79;"/>
+			<col name="4.5V" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="12.6;13.36;15.43;17.17;17.97;17.07;14.86;13.51;"/>
+			<col name="19" type="6" num="0" prec="13" plot="2" width="100" stat="0"/>
+			<col name="20" type="6" num="0" prec="13" plot="2" width="100" stat="0"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph1" date="2460597.7637351" x="771" y="2" w="499" h="700" active="1" dpi="120">
+		<layout cw="481" ch="639" w="512" h="384" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="4" y="7" w="473" h="626" autoscale="1" maxMajorTicks="20" antialias="1" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00831601" y="0.0109546" w="0.983368" h="0.979656"/>
+			<title text="Title" color="#000000" font="Lucida Sans Unicode,10.4645,-1,5,75,0,0,0,0,0" align="4228" fmw="42"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="67" y="41" w="401" h="541" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0"/>
+			<curve type="1" z="21" table="Table1" x="x [cm]" y="2.5V" from="0" to="-1" line="0" lc="#000000" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#000000" lw="2" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="1" z="22" table="Table1" x="3" y="2.0V" from="0" to="-1" line="0" lc="#ff0000" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#ff0000" lw="2" ls="0" brc="#ff0000"/>
+			</curve>
+			<curve type="1" z="23" table="Table1" x="5" y="1.5V" from="0" to="-1" line="0" lc="#00ff00" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#008000" lw="2" ls="0" brc="#008000"/>
+			</curve>
+			<curve type="1" z="24" table="Table1" x="7" y="1.0V" from="0" to="-1" line="0" lc="#0000ff" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#0000ff" lw="2" ls="0" brc="#0000ff"/>
+			</curve>
+			<curve type="1" z="25" table="Table1" x="9" y="0.5V" from="0" to="-1" line="0" lc="#00ffff" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#008080" lw="2" ls="0" brc="#008080"/>
+			</curve>
+			<curve type="1" z="26" table="Table1" x="11" y="3.0V" from="0" to="-1" line="0" lc="#ff00ff" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#ff00ff" lw="2" ls="0" brc="#ff00ff"/>
+			</curve>
+			<curve type="1" z="27" table="Table1" x="13" y="3.5V" from="0" to="-1" line="0" lc="#ffff00" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#ff8000" lw="2" ls="0" brc="#ff8000"/>
+			</curve>
+			<curve type="1" z="28" table="Table1" x="15" y="4.0V" from="0" to="-1" line="0" lc="#808000" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#808000" lw="2" ls="0" brc="#808000"/>
+			</curve>
+			<curve type="1" z="29" table="Table1" x="17" y="4.5V" from="0" to="-1" line="0" lc="#000080" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#000080" lw="2" ls="0" brc="#000080"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-30" to="30" step="0" maj="7" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8.37163,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8.37163,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8.37163,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8.37163,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-20" to="20" step="0" maj="9" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8.37163,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8.37163,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8.37163,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8.37163,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="-19" y="31" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,7.85921,-1,5,50,0,0,0,0,0" text="\l(5)%(5)&#10;\l(4)%(4)&#10;\l(3)%(3)&#10;\l(2)%(2)&#10;\l(1)%(1)&#10;\l(6)%(6)&#10;\l(7)%(7)&#10;\l(8)%(8)&#10;\l(9)%(9)"/>
+		</tab>
+	</window>
+</qti>

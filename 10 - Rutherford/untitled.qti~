@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc13" dpi="144" arch="Win64" script="muParser" windows="1" expand="1">
+	<window type="1" name="Table1" date="2460780.5972076" x="0" y="0" w="751" h="448" active="1">
+		<tab rows="30" cols="4" labels="0">
+			<col name="x [cm]" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="12;11;10;9;8;7;6;5;4;3;"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="40;40;40;40;40;40;40;40;40;40;"/>
+			<col name="t [s]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="102.06;103.55;91.45;101.55;135.18;161.43;152.12;158.04;235.59;393.58;"/>
+			<col name="t2[s]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="114.31;97.11;157.55;116.43;113.58;185.22;172.61;234.78;352.53;444.08;"/>
+		</tab>
+	</window>
+</qti>

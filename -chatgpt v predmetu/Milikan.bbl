@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+\providecommand{\biburl}[1]{\url{#1}}
+\providecommand{\urlprefix}{Dostupné z: }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\biburl{#2}}
+
+\bibitem{cviceni}
+Čermák, . l.~., Martin. \emph{Cvičení z elektřiny a magnetismu}.
+  knihovnicka.cz, Brno: Masarykova univerzita, 2014, tento text vyšel za
+  podpory Fondu rozvoje Masarykovy univerzity a Ústavu fyzikální
+  elektroniky.
+
+\bibitem{ChatGPT}
+{OpenAI}. ChatGPT (GPT-4). 2025, cit. 09-04-2025.
+\urlprefix\biburl{https://chat.openai.com}
+
+\bibitem{Grok}
+{xAI}. Grok (Grok-2, Grok-3). 2025, cit. 09-04-2025.
+\urlprefix\biburl{https://grok.x.ai}
+
+\bibitem{Claude}
+{Anthropic}. Claude (Claude 3.7). 2025, cit. 09-04-2025.
+\urlprefix\biburl{https://claude.ai}
+
+\bibitem{anthropicprivacy}
+{Anthropic}. How do you use personal data in model training? 2025, cit.
+  09-04-2025.
+\urlprefix\biburl{https://privacy.anthropic.com/en/articles/10023555-how-do-you-use-personal-data-in-model-training}
+
+\bibitem{ET2025ghibli}
+{The Economic Times}. OpenAI's Sam Altman limits ChatGPT’s Ghibli image
+  generation as GPUs struggle to keep up with demand—can AI handle the viral
+  craze, or is it too much to sustain? 2025, cit. 09-04-2025.
+\urlprefix\biburl{https://economictimes.indiatimes.com/news/international/us/openais-sam-altman-limits-chatgpts-ghibli-image-generation-as-gpus-struggle-to-keep-up-with-demandcan-ai-handle-the-viral-craze-or-is-it-too-much-to-sustain/articleshow/119610852.cms}
+
+\end{thebibliography}

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "Test arduino",
+			"path": "../../PlatformIO/Projects/Test arduino"
+		}
+	],
+	"settings": {}
+}

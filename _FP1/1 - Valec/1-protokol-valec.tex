@@ -1,0 +1,274 @@
+% Hlavicka pro protokoly z fyzikalniho praktika.
+% Verze pro: LaTeX
+% Verze hlavicky: 22. 2. 2007
+% Autor: Ustav fyziky kondenzovanych latek
+% Ke stazeni: www.physics.muni.cz/ufkl/Vyuka/
+% Licence: volne k pouziti, nejlepe k vcasnemu odevzdani protokolu z Vaseho mereni.
+
+
+\documentclass[czech,11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage{babel}
+\usepackage{hyperref}
+
+
+%%% Nemente:
+\usepackage[margin=2cm]{geometry}
+\newtoks\jmenopraktika \newtoks\jmeno \newtoks\datum
+\newtoks\obor \newtoks\skupina \newtoks\rocnik \newtoks\semestr
+\newtoks\cisloulohy \newtoks\jmenoulohy
+\newtoks\tlak \newtoks\teplota \newtoks\vlhkost
+%%% Nemente - konec.
+
+
+%%%%%%%%%%% Doplnte pozadovane polozky:
+
+\jmenopraktika={Fyzikální praktikum 1}  % nahradte jmenem vaseho predmetu
+\jmeno={Teodor Duraković}            % nahradte jmenem mericiho
+\datum={28.~února 2024}        % nahradte datem mereni ulohy
+\obor={F}                     % nahradte zkratkou vami studovaneho oboru
+\skupina={St 8:00}            % nahradte dobou vyuky vasi seminarni skupiny
+\rocnik={I}                  % nahradte rocnikem, ve kterem studujete
+\semestr={II}                 % nahradte semestrem, ve kterem studujete
+
+\cisloulohy={1}               % nahradte cislem merene ulohy
+\jmenoulohy={Měření hustoty válce} % nahradte jmenem merene ulohy
+
+\tlak={98 \,\rm 900}                   % nahradte tlakem pri mereni (v hPa)
+\teplota={20.2}               % nahradte teplotou pri mereni (ve stupnich Celsia)
+\vlhkost={43.5}               % nahradte vlhkosti vzduchu pri mereni (v %)
+
+%%%%%%%%%%% Konec pozadovanych polozek.
+
+
+%%%%%%%%%%% Uzitecne balicky:
+
+%%%%%% Zamezeni parchantu:
+\widowpenalty 10000 \clubpenalty 10000 \displaywidowpenalty 10000
+%%%%%% Parametry pro moznost vsazeni vetsiho poctu obrazku na stranku
+\setcounter{topnumber}{3}	  % max. pocet floatu nahore (specifikace t)
+\setcounter{bottomnumber}{3}	  % max. pocet floatu dole (specifikace b)
+\setcounter{totalnumber}{6}	  % max. pocet floatu na strance celkem
+\renewcommand\topfraction{0.9}	  % max podil stranky pro floaty nahore
+\renewcommand\bottomfraction{0.9} % max podil stranky pro floaty dole
+\renewcommand\textfraction{0.1}	  % min podil stranky, ktery musi obsahovat text
+\intextsep=8mm \textfloatsep=8mm  %\intextsep pro ulozeni [h] floatu a \textfloatsep pro [b] or [t]
+
+% Tecky za cisly sekci:
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+% Jednopismenna mezera mezi cislem a nazvem kapitoly:
+\makeatletter \def\@seccntformat#1{\csname the#1\endcsname\hspace{1ex}} \makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zacatek dokumentu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Nemente:
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\thispagestyle{empty}
+	
+	{
+		\begin{center}
+			\sf 
+			{\Large Ústav fyzikální elektroniky Přírodovědecké fakulty Masarykovy univerzity} \\
+			\bigskip
+			{\huge \bfseries FYZIKÁLNÍ PRAKTIKUM} \\
+			\bigskip
+			{\Large \the\jmenopraktika}
+		\end{center}
+		
+		\bigskip
+		
+		\sf
+		\noindent
+		\setlength{\arrayrulewidth}{1pt}
+		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l}
+			\large {\bfseries Zpracoval:}  \the\jmeno & \large  {\bfseries Naměřeno:} \the\datum\\[2mm]
+			\large  {\bfseries Obor:} \the\obor  \hspace{40mm}  {\bfseries Skupina:} \the\skupina %
+			%{\bfseries Ročník:} \the\rocnik \hspace{5mm} {\bfseries Semestr:} \the\semestr  
+			&\large {\bfseries Testováno:}\\
+			\\
+			\hline
+		\end{tabular*}
+	}
+	
+	\bigskip
+	
+	{
+		\sf
+		\noindent \begin{tabular}{p{3cm} p{0.6\textwidth}}
+			\Large  Úloha č. {\bfseries \the\cisloulohy:} \par
+			\smallskip
+			$T=\the\teplota$~$^\circ$C \par
+			$p=\the\tlak$~Pa \par
+			$\varphi=\the\vlhkost$~\%
+			&\Large \bfseries \the\jmenoulohy  \\[2mm]
+		\end{tabular}
+	}
+	
+	\vskip1cm
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% konec Nemente.
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Zacatek textu vlastniho protokolu
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	
+	\section{Zadání}
+	Zjistit hustotu dutého válce pomocí změření jeho rozměrů a hmotnosti.
+	
+	\section{Postup}
+	Válci jsou změřeny veškeré dimenze (vnější a vnitřní diametr, výška). Průměry jsou měřeny posuvným měřítkem ($d = 0.02\,\rm mm$), výška mikrometrem ($d = 0,005\,\rm mm$). Hmotnost je zvážena laboratorními váhami ($ d = 0,0001\,\rm g ; e = 0,001\,\rm g$). Na závěr je těleso ponořeno do vody, čímž je odhadnuta jeho hustota - těleso neplove, hustota tudíž bude vyšší než $1000\,\rm {kg}.{m^{-3}}$.
+	
+	
+	\subsection{Měření}
+	Měření rozměrů jsou vždy provedena desetkrát, při zpozorování viditelných hrubých chyb je měření opakováno bez zápisu chybné hodnoty. 
+	\\
+	
+	\quad \quad \quad\quad\quad \quad\quad\quad\quad\quad\quad\quad\quad \begin{tabular}{||r|c|c|c||}
+		\hline
+		n & D [cm] & d [cm] & h [cm] \\
+		\hline
+		1 & 4.962 & 0.992 & 1.5040 \\
+		\hline
+		2 & 4.966 & 1.000 &1.5115\\
+		\hline
+		3 & 4.962 &0.980 &1.5110 \\
+		\hline
+		4 & 4.962 & 0.972 &1.5135\\
+		\hline
+		5 &  4.964 &1.000 &1.5120\\
+		\hline
+		6 &  4.962 & 0.996&1.5065\\
+		\hline 
+		7 &  4.964 & 0.994&1.5105\\
+		\hline
+		8 &  4.962 &1.000 &1.5085\\
+		\hline
+		9 &  4.964 & 1.000&1.5080\\
+		\hline
+		10 &  4.962 & 0.988&1.5125\\
+		\hline
+	\end{tabular} \\
+	
+
+\quad \quad \quad\quad\quad \quad\quad\quad\quad\quad\quad\quad Změřená hmotnost činila $m = 33,2557\,\rm g$
+	
+	\subsection{Zpracování měření}
+	Vztahem \begin{equation}
+		\overline{x} = \frac{1}{N} \sum_{i=1}^{N} x_i
+	\end{equation}
+	získáme odhady středních hodnot (arit. průměry) vícekrát měřených veličin (uvedeny v bodě 2.6.). \\
+	Střední hodnoty dosadíme do formule pro výpočet hustoty:
+	\begin{equation}
+		 \rho = \frac m V = \frac{ m}{\pi  h \left( (\frac { D} 2)^2 - (\frac {{d}} 2)^2)\right)} = 1.18599 \,\rm g.cm^{-3} = 1 185.99 \,\rm kg.m^{-3}
+	\end{equation}
+	Vztahem
+	\begin{equation}
+		\sigma = \sqrt[]{\frac{\sum_{i =1}^N{ (x_i - \overline{x} )^2} }{N-1}}
+	\end{equation}
+	získáme odhad směrodatné odchylky. Úpravou Studentovým koeficientem s $p = 0,9973, \nu = 9$ získáme hrubé chyby (krajní odchylky) pro měřené veličiny.
+    Vidíme, že měřené hodnoty z intervalů nevystupují, soubory hodnot tudíž není třeba nijak upravovat.	
+	
+	\subsection{Nejistoty typu A}
+	Nejistoty typu A získáme užitím vztahu
+	\begin{equation}
+		u_x = \sqrt[]{\frac{\sum_{i =1}^N{ (x_i - \overline{x} )^2} }{N(N-1)}}
+	\end{equation}
+	
+	\subsection{Nejistoty typu B}
+	Nejistoty typu B získáme užitím vztahu $ u_B = a/k $
+	
+	\subsubsection{Měřidla délky}
+	pro měřidla délky platí: $a = d; k = \sqrt{3}; u_b = \frac{d}{\sqrt{3}}$ \\
+	Pro posuvné měřítko tedy nejistota typu B činí $u_B = \frac {0.002}{ \sqrt{3}} = 0.00115 cm$ \\
+	Pro mikrometr platí $u_B = \frac{0.0005}{\sqrt{3}} = 0.000289 \,\rm cm$ \\
+\textit{	Zde je třeba konstatovat, že pro $a$ posuvného měřítka je používána celá hodnota nejmenšího dílku, zatímco u mikrometru je uvedena jeho polovina. Je to provedeno proto, že jsem při měření byl u mikrometru schopen určit polovinu dílku, zatímco u posuvného měřítka nikoliv.}
+	
+	\subsubsection{Váhy}
+	Pro váhy platí: $a=e; k =3$, tedy $ u_B = \frac{0.001}{3} = 0.000333\,\rm g$
+	
+	\subsection{Nejistota typu C}
+	Nejistotu typu C získáme vztahem:
+	
+	\begin{equation}
+		u_C = \sqrt{u_A ^2 + u_B ^2}
+	\end{equation}
+	
+	\subsection{Spočítané veličiny}
+	Výše uvedenými vztahy jsme získali následující veličiny \\
+	
+	\quad \quad \quad \quad \quad \quad \quad   \begin{tabular}{||l|c|c|c|c|c||}
+		\hline
+		& $\overline{x}$ & $\hat{k}$ & $u_A$ & $u_B$ & $u_C$   \\
+		\hline
+		D [cm]& 4.963 & 0.0058 & 0.000447 & 0.00115 & 0.00124   \\
+		\hline
+		d [cm]& 0.9922 & 0.039 & 0.00305 & 0.00115 & 0.00326   \\
+		\hline
+		h [cm]& 1.5098 & 0.012 & 0.000943 & 0.000289 & 0.000986   \\
+		\hline
+		m [g]& 33.2557 & - & - & 0.000333 & 0.000333   \\
+		\hline
+	\end{tabular}
+	
+	
+	\subsection{Zákon přenosu nejistot}
+	
+	
+	Užitím zákona přenosu nejistot získáme formuli pro nejistotu výsledku - hustoty:
+	{\tiny
+	\begin{equation}
+		u_{\rho} = \sqrt[]{
+			\left(\frac{-8 \pi h m D}{\left(\pi h\left(D^2-d^2\right)\right)^2}\right)^2 \cdot u_D^2 +
+			\left(\frac{8 \pi h m d}{\left(\pi h\left(D^2-d^2\right)\right)^2}\right)^2 \cdot u_d^2  +
+			\left(\frac{-4 m}{\pi h^2 \cdot\left(D^2-d^2\right)}\right)^2 
+			\cdot u_h^2 +
+			\left(\frac{4 }{\pi h \cdot\left(D^2-d^2\right)}\right)^2 \cdot u_m^2 }
+ 	\end{equation}
+}
+	Po dosazení získáváme kombinovanou nejistotu hustoty:
+	\begin{equation*}
+		u_\rho = 0.0034 \,\rm g .cm^{-3}
+	\end{equation*}
+	Tuto nejistotu upravíme studentovým koeficientem pro $ p = 0.68 ; \nu = 9$ :
+	
+	\begin{equation*}
+		U_{ \rho } = 1.059 * u_{\rho} =   0.0036 \,\rm g .cm^{-3}=  3.6 \,\rm kg.m^{-3}
+	\end{equation*}
+	
+	\section{Výsledek}
+	Výše popsaným postupem jsme získali hodnotu hustoty:
+	
+	\begin{equation*}
+		\rho = (1186 \pm 4) \,\rm kg.m^{-3} (p = 0.6827)  
+	\end{equation*}
+	
+	\section{Závěr}
+	Spočítaná hodnota se pohybuje v předpokládaných mezích, bez znalosti konkrétního druhu materiálu však hodnotu nedokážeme porovnat s hodnotou tabulkovou. Přesnost experimentu lze nicméně částečně zhodnotit relativní odchylkou, která je při hodnotě $ r_{\rho} = \frac {4}{1186} = 0.0034$ - tedy kolem tří promile - s~ohledem na účely experimentu přijatelná.  
+	
+	% Nakonec nezapomeňte projet text programem vlna nebo vlnka, např.
+	% 	vlna -m -l -n mojeuloha.tex
+	% nebo zkontrolovat a opravit jednopísmenné předložky na koncích řádků ručně.
+	
+	
+\end{document}

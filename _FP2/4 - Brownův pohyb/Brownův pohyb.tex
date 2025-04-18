@@ -1,0 +1,304 @@
+% Hlavicka pro protokoly z fyzikalniho praktika.
+% Verze pro: LaTeX
+% Verze hlavicky: 22. 2. 2007
+% Autor: Ustav fyziky kondenzovanych latek
+% Ke stazeni: www.physics.muni.cz/ufkl/Vyuka/
+% Licence: volne k pouziti, nejlepe k vcasnemu odevzdani protokolu z Vaseho mereni.
+
+
+\documentclass[czech,11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{biblatex}
+
+
+
+
+%%% Nemente:
+\usepackage[margin=2cm]{geometry}
+\newtoks\jmenopraktika \newtoks\jmeno \newtoks\datum
+\newtoks\obor \newtoks\skupina \newtoks\rocnik \newtoks\semestr
+\newtoks\cisloulohy \newtoks\jmenoulohy
+\newtoks\tlak \newtoks\teplota \newtoks\vlhkost
+%%% Nemente - konec.
+
+
+%%%%%%%%%%% Doplnte pozadovane polozky:
+
+\jmenopraktika={Fyzikální praktikum 2}  % nahradte jmenem vaseho predmetu
+\jmeno={Teodor Duraković}            % nahradte jmenem mericiho
+\datum={21.~října 2024}        % nahradte datem mereni ulohy
+\obor={F}                     % nahradte zkratkou vami studovaneho oboru
+\skupina={Po 14:00}            % nahradte dobou vyuky vasi seminarni skupiny
+\rocnik={II}                  % nahradte rocnikem, ve kterem studujete
+\semestr={III}                 % nahradte semestrem, ve kterem studujete
+
+\cisloulohy={4}               % nahradte cislem merene ulohy
+\jmenoulohy={Brownův pohyb} % nahradte jmenem merene ulohy
+
+\tlak={1002}                   % nahradte tlakem pri mereni (v hPa)
+\teplota={21.9}               % nahradte teplotou pri mereni (ve stupnich Celsia)
+\vlhkost={45}               % nahradte vlhkosti vzduchu pri mereni (v %)
+
+%%%%%%%%%%% Konec pozadovanych polozek.
+
+
+%%%%%%%%%%% Uzitecne balicky:
+
+%%%%%% Zamezeni parchantu:
+\widowpenalty 10000 \clubpenalty 10000 \displaywidowpenalty 10000
+%%%%%% Parametry pro moznost vsazeni vetsiho poctu obrazku na stranku
+\setcounter{topnumber}{3}	  % max. pocet floatu nahore (specifikace t)
+\setcounter{bottomnumber}{3}	  % max. pocet floatu dole (specifikace b)
+\setcounter{totalnumber}{6}	  % max. pocet floatu na strance celkem
+\renewcommand\topfraction{0.9}	  % max podil stranky pro floaty nahore
+\renewcommand\bottomfraction{0.9} % max podil stranky pro floaty dole
+\renewcommand\textfraction{0.1}	  % min podil stranky, ktery musi obsahovat text
+\intextsep=8mm \textfloatsep=8mm  %\intextsep pro ulozeni [h] floatu a \textfloatsep pro [b] or [t]
+
+% Tecky za cisly sekci:
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}.}
+% Jednopismenna mezera mezi cislem a nazvem kapitoly:
+\makeatletter \def\@seccntformat#1{\csname the#1\endcsname\hspace{1ex}} \makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zacatek dokumentu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Nemente:
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\thispagestyle{empty}
+	
+	{
+		\begin{center}
+			\sf 
+			{\Large Ústav fyzikální elektroniky Přírodovědecké fakulty Masarykovy univerzity} \\
+			\bigskip
+			{\huge \bfseries FYZIKÁLNÍ PRAKTIKUM} \\
+			\bigskip
+			{\Large \the\jmenopraktika}
+		\end{center}
+		
+		\bigskip
+		
+		\sf
+		\noindent
+		\setlength{\arrayrulewidth}{1pt}
+		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l}
+			\large {\bfseries Zpracoval:}  \the\jmeno & \large  {\bfseries Naměřeno:} \the\datum\\[2mm]
+			\large  {\bfseries Obor:} \the\obor  \hspace{40mm}  {\bfseries Skupina:} \the\skupina %
+			%{\bfseries Ročník:} \the\rocnik \hspace{5mm} {\bfseries Semestr:} \the\semestr  
+			&\large {\bfseries Testováno:}\\
+			\\
+			\hline
+		\end{tabular*}
+	}
+	
+	\bigskip
+	
+	{
+		\sf
+		\noindent \begin{tabular}{p{3cm} p{0.6\textwidth}}
+			\Large  Úloha č. {\bfseries \the\cisloulohy:} \par
+			\smallskip
+			$T=\the\teplota$~$^\circ$C \par
+			$p=\the\tlak$~hPa \par
+			$\varphi=\the\vlhkost$~\%
+			&\Large \bfseries \the\jmenoulohy  \\[2mm]
+		\end{tabular}
+	}
+	
+	\vskip1cm
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% konec Nemente.
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Zacatek textu vlastniho protokolu
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{multicols}{2}
+		\section{Zadání}
+		1. Zaznamenat náhodný pohyb několika částic v kapalině\\
+		2. Určit míru shody experimentálně určené časové závislosti středního kvadratického posunu částic s předpovědí na základě Einsteinova zákona\\
+		3. Určit velikost částic
+		\section{Úvod}
+		Jsou-li v kapalině rozptýleny malé částice, pak se tyto částice sráží s okolními molekulami kapaliny. Jsou-li rozměry uvažovaných částic dostatečně malé (řádově stovky nm), nemusí být v každém okamžiku kompenzovány impulzy sil, kterými molekuly kapaliny působí na tyto částice. Vlivem takto nevykompenzovaných impulzů se částice pohybuje, přičemž se v delším časovém intervalu směr pohybu náhodně mění. Tento druh pohybu se nazývá Brownův pohyb. Pohybující se částice předává při pohybu energii okolním molekulám a protože je mnohem větší než molekuly kapaliny, je možné její pohyb v kapalině popsat Stokesovým zákonem. Brownův pohyb byl prvním fyzikálním dějem, v němž se projevila existence molekul a mĕl tedy velký význam při experimentálním ověření molekulární kinetické teorie hmoty. Neuspořádaný pohyb brownovské částice se řídí Einsteinovým zákonem: sledujeme-li polohy částice v definovaných časových okamžicích, pak střední kvadratické posunutí částice je úměrné zvoleným časovým intervalům. Ukážeme nyní odvození tohoto zákona a experimentální postup při jeho ověření.
+		
+		V dalším nebudeme přímo pracovat s vektory přemístění částice, ale budeme uvažovat průměty těchto vektorů do libovolného pevného směru. Pohybová rovnice má tvar
+		\begin{equation}
+			m \frac{\mathrm{~d}^{2} x}{\mathrm{~d} t^{2}}=F_{1}+F_{2}
+		\end{equation}
+		kde $m$ je hmotnost částice, $F_{1}$ je výsledná (nevykompenzovaná) síla způsobená srážkami s molekulami kapaliny a $F_{2}$ je síla způsobená odporem prostředí (okolními molekulami). Pak platí
+		\begin{equation}
+			F_{2}=-k \frac{\mathrm{~d} x}{\mathrm{~d} t} .
+		\end{equation}
+		
+		
+		Podle Stokesova zákona [2 je pro kulovou částici
+		\begin{equation}
+			k=6 \pi \eta r
+		\end{equation}
+		
+		kde $\eta$ je dynamická viskozita kapaliny, $r$ je poloměr částice a $\frac{\mathrm{d} x}{\mathrm{~d} t}$ je rychlost částice. Pak lze 4.1) psát ve tvaru
+		\begin{equation}
+			m \frac{\mathrm{~d}^{2} x}{\mathrm{~d} t^{2}}=F_{1}-k \frac{\mathrm{~d} x}{\mathrm{~d} t}
+		\end{equation}
+		
+		
+		Vynásobením rovnice (4.4) veličinou $x$ dostaneme:
+		\begin{equation}
+			m x \frac{\mathrm{~d}^{2} x}{\mathrm{~d} t^{2}}=F_{1} x-k x \frac{\mathrm{~d} x}{\mathrm{~d} t} .
+		\end{equation}
+		Jednoduše lze ukázat, že
+		\begin{gather}
+			x \frac{\mathrm{~d}^{2} x}{\mathrm{~d} t^{2}}=\frac{1}{2} \frac{\mathrm{~d}^{2}}{\mathrm{~d} t^{2}}\left(x^{2}\right)-\left(\frac{\mathrm{d} x}{\mathrm{~d} t}\right)^{2} \\
+			x \frac{\mathrm{~d} x}{\mathrm{~d} t}=\frac{1}{2} \frac{\mathrm{~d}}{\mathrm{~d} t}\left(x^{2}\right)
+		\end{gather}
+		
+		
+		Pak dosazením 4.6) a 4.7 do vztahu 4.5 dostaneme
+		$$
+		\frac{m}{2} \frac{\mathrm{~d}^{2}}{\mathrm{~d} t^{2}}\left(x^{2}\right)-m\left(\frac{\mathrm{~d} x}{\mathrm{~d} t}\right)^{2}=F_{1} x-\frac{1}{2} k \frac{\mathrm{~d}}{\mathrm{~d} t}\left(x^{2}\right)
+		$$
+		
+		Zajímáme se ovšem pouze o střední hodnoty uvedených veličin, které je možné pozorovat v časovém intervalu $t$. Protože je pohyb částice chaotický, pak střední hodnota součinu $F_{1} x=0$. Označme dále
+		$$
+		\begin{gathered}
+			\frac{\mathrm{d}}{\mathrm{~d} t}\left(\left\langle x^{2}\right\rangle\right)=h \\
+			-\frac{k h}{2}=\frac{m}{2} \frac{\mathrm{~d} h}{\mathrm{~d} t}-m\left\langle\left(\frac{\mathrm{~d} x}{\mathrm{~d} t}\right)^{2}\right\rangle
+		\end{gathered}
+		$$
+		
+		Druhý člen na pravé straně rovnice 4.10 je dvojnásobek střední hodnoty kinetické energie částice. Aplikujeme-li na pohyb brownovské částice teorii ideálních plynů a zajímáme-li se o složku rychlosti částice pouze ve směru jedné osy (osy $x$, jeden ze tří směrů), dostaneme pak
+		$$
+		\left\langle\frac{1}{2} m v^{2}\right\rangle=\frac{3 R T}{2 N_{\mathrm{A}}}, \quad m\left\langle\left(\frac{\mathrm{~d} x}{\mathrm{~d} t}\right)^{2}\right\rangle=\frac{R T}{N_{\mathrm{A}}}
+		$$
+		kde $N_{\mathrm{A}}$ je Avogadrovo číslo, $T$ absolutní teplota kapaliny a $R$ univerzální plynová konstanta. Dosazením 4.11) do vztahu 4.10 dostaneme
+		$$
+		-\frac{k h}{2}=\frac{m}{2} \frac{\mathrm{~d} h}{\mathrm{~d} t}-\frac{R T}{N_{\mathrm{A}}}
+		$$
+		a tedy
+		$$
+		\frac{\mathrm{d} h}{h-\frac{2 R T}{N_{\mathrm{A}} k}}=-\frac{k}{m} \mathrm{~d} t
+		$$
+		
+		Integrací této rovnice dostaneme
+		$$
+		\ln \left(h-\frac{2 R T}{N_{\mathrm{A}} k}\right)-\ln C=-\frac{k}{m} t
+		$$
+		neboli po úpravě
+		$$
+		h-\frac{2 R T}{N_{\mathrm{A}} k}=C \mathrm{e}^{-\frac{k}{m} t}
+		$$
+		kde $C$ je integrační konstanta. Je-li časový interval $t$ měření dosti velký, můžeme v poslední rovnici zanedbat člen $\mathrm{e}^{-\frac{k}{m} t} \rightarrow 0$ na pravé straně a dostáváme
+		$$
+		h=\frac{2 R T}{N_{\mathrm{A}} k}
+		$$
+		
+		Jestliže se vrátíme k původnímu významu parametrů $h$ a $k$ dostaneme
+		$$
+		\frac{\mathrm{d}}{\mathrm{~d} t}\left\langle x^{2}\right\rangle=\frac{2 R T}{6 \pi \eta r N_{\mathrm{A}}}
+		$$
+		
+		Rovnici 4.17 integrujeme za předpokladu počátečních podmínek $x=0, t=0$ a dostaneme
+		
+	\begin{equation}
+			\left\langle x^{2}\right\rangle=\frac{2 R T}{6 \pi \eta r N_{\mathrm{A}}} t
+	\end{equation}
+		
+		což je Einsteinův výraz pro střední kvadratické posunutí brownovské částice.
+		\section{Postup měření}
+		Pozorování popsaného jevu se zpravidla provádí na mikroskopu se značným zvětšením, jehož obraz je možné zobrazit na velkou projekční plochu. Jelikož byla kamera na televizi napojena SCART konektorem, signál do počítače přivedeme využitím adaptéru SCART → HDMI a následným dovedením zpracováním signálu střihovou kartou (resp. adaptérem HDMI → USB). Po přípravě preparátu zapneme zaznamenání a získáme dostatečné množství dat, následně data zpracujeme stejně, jako bychom měření prováděli ručně,
+		
+		\section{Měření}
+		\subsection{Zpracování obrazových dat}
+		Ke zpracování dat využijeme pythonové knihnovny \textit{openCV}, jmenovitě její funkci \textit{OpticalFlow}$^{[1]}$, která umožňuje snímání pohybu vybraných objektů. My tuto funkci aplikujeme právě na pohybující se částice v suspenzi. Algoritmus funkce, vycházející přímo z [2] nalezne rohy pohybujících se objektů a následně se v každém budoucím snímku snaží v okolí tohoto bodu, jehož velikost je v kódu specifikována, naleznout původní roh. Jelikož je tento roh, respektive hrana, specifikován jako místo, kde dochází k velké změně okolních pixelů (kupř. z černé na bílou), v prvé řadě musíme před zpracováním data upravit tak, aby tento algoritmický proces byl co nejpřesnější a pro metodu nelezení hran co nejjednodušší. Proto v sekvenci zvýšíme kontrast, aby rozdíl mezi částicemi a pozadím byl větší. Zároveň v samotném kódu určíme, že hledání nových bodů chceme provádět každých 30 snímků (jelikož nalezení potenciálně vhodných rohů a následný tracking jsou dva separátní procesy). U těchto nových bodů okamžitě vyřazujeme ty, které jsou blízko stávajícím bodům, čímž se snažíme předejít sledování stejné částice vícero body. 
+		Zatímco při ručním měření validitu dat kontrolovat není, zde si nemůžeme být jisti stoprocentní přesností dat.
+		Po zpracování celé sekvence kódem ověříme validitu získaných bodů: Filtrujeme získaná data, aby obsahovala pouze pohybující se body a z datasetu vyloučíme body s příliš krátkou dobou existence. Získaná data kód exportuje v textovém i vizuálním formátu, přičemž ve vizuálním formátu pouze k sekvenci přidá sledované body spolu s jejich ID, abychom následně mohli v případě potřeby vybrat vhodná data vizuální kontrolou.
+		
+		Ke stanovení měřítka použijeme destičku se zábrusy vzdálenými $50 \,\mathrm{\mu m}$ od sebe. Následně změříme vzdálenost těchto linií na získaném obraze, čímž získáme délku, již reprezentuje jeden pixel.
+		\begin{gather*}
+			\Delta r = 50 \,\mathrm{\mu m}\\
+			\Delta p = 938 \pm 3 \,\mathrm{px}\\
+			1 \,\mathrm{px} = \frac{\Delta r}{\Delta p} = 53.30 \pm 0.17 \,\mathrm{nm}
+		\end{gather*}
+		
+		Jsou-li předpoklady z úvodu splněny, mělo by platit, že střední kvadratické posuny $\langle r \rangle$ pro různé intervaly jsou ve stejném poměru, jako intervaly samotné: $\langle r_t \rangle: \langle r_{t+n} \rangle = t : t+n$. I tímto způsobem lze ověřit validitu dat, jelikož data značně od teorie se odchylující budou vycházet z chybného zpracování.
+		\subsection{Zpracování dat}
+		První polovina algoritmického zpracování nám dává video a získaná data v tabulkovém formátu. Data je potřeba dále zpracovat, jelikož jsme při snímání pohybu zaznamenávali pouze x/y polohy bodů.
+		Pro každou sérii poloh bodu v konkrétní souřadnici tvoříme sérii rozdílů poloh, tedy dráhy uražené ve smyslu osy x/y mezi dvěma snímky, resp. za 1/30 sekundy. \textbf{Zde provádíme další, velmi důležitou filtraci dat}, a vylučujeme veškeré hodnoty, které by částice ve skutečnosti nemohly urazit, jež způsobily nežádoucí vizuální artefakty. Tento krok se při zpracování ukázal jako kritický, jelikož zmíněné obrazové chyby dokázaly body, často pouze na malou chvíli, přesunout až o polovinu obrazovky. Následně sumací těchto drah za jistou dobu, resp. počet snímků, získáme pohyb ve smyslu x/y za 5, 10 a 15 sekund, z čehož pomocí Pythagorovy věty získáme celkový pohyb za daný časový interval. Druhou mocninu této hodnoty průměrujeme, čímž získáme zmíněné hodnoty  $\langle r_5 \rangle, \langle r_{10} \rangle, \langle r_{15}\rangle$. Analýzou poměrů hodnot vybereme ty, u kterých poměry splňují Einsteinův vztah, u nich formulí (1) získáme hodnoty poloměru částic.
+		Získáváme hodnoty:\\
+		\begin{center}
+			\begin{tabular}{|r|r|r|r|}
+				\hline
+				$n                                            $&$ r[nm]     $& ratio 10/5   & ratio 15/10  \\ \hline
+				
+				$1                                            $&$ 858\pm11  $&$ 1.85\pm0.05 $&$ 3.11\pm0.09 $\\ \hline
+				$2 $ &$ 1285\pm18 $&$ 2.04\pm0.07 $&$ 2.93\pm0.09 $\\ \hline
+				$3                                            $&$ 1033\pm17 $&$ 1.89\pm0.07 $& $ 2.91\pm0.11 $\\ \hline
+				$4 $&$ 412\pm5   $&$ 2.13\pm0.06 $&$ 3.03\pm0.08 $\\ \hline
+				$5                                            $&$ 380\pm7   $&$ 2.14\pm0.08 $&$ 2.89\pm0.14 $\\ \hline
+				$6                                            $&$ 1398\pm22 $&$ 2.01\pm0.07 $&$ 2.83\pm0.10 $\\ \hline
+				$7                                            $&$ 661\pm8   $&$ 2.07\pm0.05 $&$ 3.06\pm0.08 $\\ \hline
+				$8                                            $&$ 422\pm10  $&$ 1.96\pm0.12 $&$ 3.21\pm0.18 $\\ \hline
+				$9                                           $&$ 503\pm10  $&$ 1.99\pm0.10 $&$ 3.01\pm0.14 $\\ \hline
+				$10                                           $&$ 790\pm10  $&$ 2.11\pm0.05 $&$ 2.94\pm0.08 $\\ \hline
+				$11                                           $&$ 770\pm11  $&$ 2.02\pm0.06 $&$ 2.92\pm0.09 $\\ \hline
+				$12                                          $&$ 578\pm7   $&$ 1.87\pm0.05 $&$ 2.92\pm0.08 $\\ \hline
+				$13                                           $&$ 927\pm16  $&$ 2.01\pm0.08 $&$ 2.80\pm0.11$ \\ \hline
+			\end{tabular}
+		\end{center}
+		které jsou velmi blízké předpokládaným hodnotám, které jsme získali manuálním měřením z obrazového materiálu.
+		
+		\section{Závěr}
+		Podařilo se nám splnit veškeré zadané úkoly a získat hodnoty hledaných veličin, které jsou velmi blízké našim předpokladům. Celkově jsme zpracováním dat strávili circa čtyřicet hodin, přičemž jsme vytvořili v rámci celého procesu před 150 GB dat. Analýza šla jistě provést lépe a přesněji, naše metody nám však přinesly poměrně uspokojivé výsledky.
+	
+		
+
+		\begin{thebibliography}{9}
+		\bibitem{OF}
+		{\url{https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html}
+		\bibitem{Shi}
+		Shi, Jianbo. "Good features to track." 1994 Proceedings of IEEE conference on computer vision and pattern recognition. IEEE, 1994.
+		
+		
+	
+		}
+		\end{thebibliography}
+		
+		
+		
+		
+		
+		% Nakonec nezapomeňte projet text programem vlna nebo vlnka, např.
+		% 	vlna -m -l -n mojeuloha.tex
+		% nebo zkontrolovat a opravit jednopísmenné předložky na koncích řádků ručně.
+	\end{multicols}
+\end{document}

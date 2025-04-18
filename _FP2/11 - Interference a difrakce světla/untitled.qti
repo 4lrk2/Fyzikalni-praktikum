@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc13" dpi="144" arch="Win64" script="muParser" windows="9" expand="1">
+	<window type="1" name="Table1" date="2460663.8698064" x="1336" y="494" w="1199" h="818">
+		<tab rows="31" cols="5" labels="0">
+			<col name="d [mm]" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="59;69;79;89;99;109;119;129;139;149;159;169;179;189;199;249;299;349;399;449;499;549;599;"/>
+			<col name="P1a" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="13;15;17;19;21;22.5;24.5;26;28;30;32;34;36;38;40;50;59;68;78;88;97.5;106;116;"/>
+			<col name="P2a" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="28;32;35.5;39.75;43.75;47.75;52;56;60;64;68;72;76;80;84;105;125;145;165;186;206;226;"/>
+			<col name="P3a" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="47.25;54;59.5;67.5;74;81;87.5;94;101.5;108;115;122;129;136;143;177;211;245;"/>
+			<col name="P4a" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="79.35;90.5;100;114;124.5;136;148;159;171;182;194;206;216;228;240;"/>
+		</tab>
+	</window>
+	<window type="1" name="Table2" date="2460664.8318008" x="1348" y="202" w="1112" h="931" state="1">
+		<tab rows="30" cols="5" labels="0">
+			<col name="d [mm]" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="39;49;59;69;79;89;99;109;119;129;139;149;159;169;179;189;199;249;299;349;399;449;499;549;589;"/>
+			<col name="P1a" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="20;24;28;32;36;40;44;48;52;56;60;64;68;72;76;80;85;105;125.5;146;166.5;186.5;207;227.5;244;"/>
+			<col name="P2a" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="57;69;80.5;92;102.5;114;125;137;148;160.5;172;183;195;207;217;230;242;"/>
+			<col name="1" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="1386.756331;1438.615205;1475.937465;1504.070432;1526.030548;1543.646177;1558.089304;1570.145516;1580.360985;1589.12716;1596.731896;1603.391584;1609.272023;1614.502383;1619.184788;1623.401041;1610.983436;1628.605615;1635.045959;1639.680481;1643.175286;1649.66585;1651.490097;1652.985838;1653.422898;"/>
+			<col name="2" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="1533.489476;1552.260241;1569.124869;1582;1597.880705;1605.614616;1614.453253;1617.302055;1623.968941;1623.718577;1627.21392;1632.051975;1632.992881;1633.825377;1640.617407;1638.086961;1638.549009;"/>
+		</tab>
+	</window>
+	<window type="1" name="Table3" date="2460664.8867426" x="792" y="107" w="609" h="640" active="1">
+		<tab rows="28" cols="3" labels="4">
+			<col name="x1 - posuv" type="6" num="0" prec="13" plot="1" width="125" stat="0" comment="Poloha2" data="219;209;212;215;Poloha3;483;473;475;452;Poloha4;397;383;397;387;"/>
+			<col name="x2 - perioda proužků" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="89;80;82;85;;192;193;180;175;;151;143;158;171;"/>
+			<col name="d [nm]" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;x2 - perioda proužků&quot;)/col(&quot;x1 - posuv&quot;) * 531.2/2" stat="0" comment="#VALUE!" muparser="1" data="107.937899543379;101.665071770335;102.732075471698;105.004651162791;;105.580124223602;108.37378435518;100.648421052632;102.83185840708;;101.021662468514;99.1665796344648;105.704785894207;117.358139534884;"/>
+		</tab>
+	</window>
+	<window type="1" name="Table4" date="2460664.8929318" x="305" y="0" w="305" h="448">
+		<tab rows="30" cols="2" labels="0">
+			<col name="n" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="36;36;37;38;37;"/>
+			<col name="2" type="6" num="0" prec="13" plot="2" width="100" stat="0"/>
+		</tab>
+	</window>
+	<window type="6" name="Table3-ColStats2" date="2460664.9420643" x="0" y="926" w="916" h="141" label="Column Statistics of Table3" title="2">
+		<tab rows="1" cols="18" labels="0" base="Table3" stat="1" targets="2">
+			<col name="Col" type="1" format="" plot="1" width="53" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="115" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="119" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="140" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="119" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="103" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="59" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="91" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="44" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="99" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="91" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="91" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="91" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="139" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="123" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+	<window type="6" name="Table4-ColStats2" date="2460664.9787422" x="279" y="499" w="798" h="160" label="Column Statistics of Table4" title="2">
+		<tab rows="1" cols="18" labels="0" base="Table4" stat="1" targets="0">
+			<col name="Col" type="1" format="" plot="1" width="53" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="66" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="123" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="140" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="91" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="59" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="58" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="55" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="44" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="80" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="49" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="49" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="54" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="123" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="123" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+	<window type="1" name="Table7" date="2460665.0308257" x="1754" y="244" w="305" h="448">
+		<tab rows="101" cols="2" labels="0">
+			<col name="1" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="2940.827497;2978.868613;3007.974427;3030.961938;3049.576705;3130.195074;3138.065136;3202.79728;3204.50149;3205.978502;3207.27091;3208.411288;3209.42497;3210.331961;3211.148261;3214.250277;3268.73895;3308.826832;3298.288108;3290.145428;3299.880544;3337.957421;3328.357116;2951.87493;3008.140865;3087.698828;3103.454772;3131.055124;3154.067693;3160.721971;3178.25432;3193.463791;3206.783168;3218.544046;3229.004765;3238.369576;3246.802082;3254.434876;3257.21123;3281.216342;3298.618578;3311.812665;3306.897323;3316.664861;3324.707313;3036.96232;3080.276735;3155.498217;3141.545766;3170.845232;3182.780695;3204.643151;3223.547063;3219.126438;3234.740974;3239.321758;3243.379709;3246.999494;3250.248439;3253.180749;3276.612561;3292.541314;3304.072994;3154.218117;3182.978653;3225.765888;3211.229233;3233.911266;3243.844252;3247.937883;3259.495114;3261.960019;3271.265437;3272.71913;3274.004262;3287.39431;3287.787888;3288.142167;"/>
+			<col name="2" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="1386.756331;1438.615205;1475.937465;1504.070432;1526.030548;1543.646177;1558.089304;1570.145516;1580.360985;1589.12716;1596.731896;1603.391584;1609.272023;1614.502383;1619.184788;1623.401041;1610.983436;1628.605615;1635.045959;1639.680481;1643.175286;1649.66585;1651.490097;1652.985838;1653.422898;1533.489476;1552.260241;1569.124869;1582;1597.880705;1605.614616;1614.453253;1617.302055;1623.968941;1623.718577;1627.21392;1632.051975;1632.992881;1633.825377;1640.617407;1638.086961;1638.549009;"/>
+		</tab>
+	</window>
+	<window type="6" name="Table7-ColStats2" date="2460665.0318169" x="916" y="958" w="948" h="141" label="Column Statistics of Table7" title="2">
+		<tab rows="1" cols="18" labels="0" base="Table7" stat="1" targets="0">
+			<col name="Col" type="1" format="" plot="1" width="53" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="119" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="119" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="140" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="103" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="111" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="95" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="95" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="44" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="103" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="95" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="87" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="83" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="123" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="115" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+	<window type="6" name="Table7-ColStats3" date="2460665.0545032" x="1201" y="0" w="956" h="141" label="Column Statistics of Table7" title="2">
+		<tab rows="1" cols="18" labels="0" base="Table7" stat="1" targets="1">
+			<col name="Col" type="1" format="" plot="1" width="53" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="119" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="119" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="140" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="119" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="103" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="95" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="95" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="44" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="95" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="95" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="95" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="75" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="123" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="115" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+</qti>

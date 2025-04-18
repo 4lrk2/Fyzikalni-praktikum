@@ -1,0 +1,14 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Milikan.blg'
+[134] biber-MSWIN64:340> INFO - === 
+[180] Biber.pm:419> INFO - Reading 'Milikan.bcf'
+[343] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[361] Biber.pm:4419> INFO - Processing section 0
+[375] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
+[435] bibtex.pm:1713> INFO - LaTeX decoding ...
+[444] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[487] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[487] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[487] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'cs-CZ'
+[489] bbl.pm:660> INFO - Writing 'Milikan.bbl' with encoding 'UTF-8'
+[490] bbl.pm:763> INFO - Output to Milikan.bbl

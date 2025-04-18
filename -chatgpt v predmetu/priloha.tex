@@ -1,0 +1,460 @@
+% Hlavicka pro protokoly z fyzikalniho praktika.
+% Verze pro: LaTeX
+% Verze hlavicky: 22. 2. 2007
+% Autor: Ustav fyziky kondenzovanych latek
+% Ke stazeni: www.physics.muni.cz/ufkl/Vyuka/
+% Licence: volne k pouziti, nejlepe k vcasnemu odevzdani protokolu z Vaseho mereni.
+
+
+\documentclass[czech,11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, animate}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{placeins}
+\graphicspath{ {./images/} }
+
+\bibliographystyle{plain}
+
+
+
+%%% Nemente:
+\usepackage[margin=2cm]{geometry}
+
+%%% Nemente - konec.
+
+
+%%%%%%%%%%% Doplnte pozadovane polozky:
+
+%opening
+\title{Využití ChatGPT v předmětu F2050 - Elektřina a magnetismus}
+\author{Teodor Duraković}        
+%%%%%%%%%%% Konec pozadovanych polozek.
+
+
+%%%%%%%%%%% Uzitecne balicky:
+
+%%%%%% Zamezeni parchantu:
+\widowpenalty 10000 \clubpenalty 10000 \displaywidowpenalty 10000
+%%%%%% Parametry pro moznost vsazeni vetsiho poctu obrazku na stranku
+\setcounter{topnumber}{3}	  % max. pocet floatu nahore (specifikace t)
+\setcounter{bottomnumber}{3}	  % max. pocet floatu dole (specifikace b)
+\setcounter{totalnumber}{6}	  % max. pocet floatu na strance celkem
+\renewcommand\topfraction{0.9}	  % max podil stranky pro floaty nahore
+\renewcommand\bottomfraction{0.9} % max podil stranky pro floaty dole
+\renewcommand\textfraction{0.1}	  % min podil stranky, ktery musi obsahovat text
+\intextsep=8mm \textfloatsep=8mm  %\intextsep pro ulozeni [h] floatu a \textfloatsep pro [b] or [t]
+
+% Tecky za cisly sekci:
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}.}
+% Jednopismenna mezera mezi cislem a nazvem kapitoly:
+\makeatletter \def\@seccntformat#1{\csname the#1\endcsname\hspace{1ex}} \makeatother
+
+\begin{document}
+	
+	\section{Př. 1.6.}
+	
+	Zadání: Spočtěte gradient funkce: $F=\frac{1}{r}$, kde $r^{2}=x^{2}+y^{2}+z^{2}$.\\
+	
+	Řešení: $\frac{\partial F}{\partial x}=-\frac{1}{r^{2}} \frac{2 x}{2 \sqrt{x^{2}+y^{2}+z^{2}}}=-\frac{x}{r^{3}}$, obdobně pro členy $\frac{\partial F}{\partial y}=-\frac{y}{r^{3}}, \frac{\partial F}{\partial z}=-\frac{z}{r^{3}}$. Výsledek bude: $\vec{\nabla} \cdot F=-\left(\frac{x}{r^{3}}, \frac{y}{r^{3}}, \frac{z}{r^{3}}\right)=-\frac{\vec{r}}{r^{3}}$.
+	\\
+	
+	\section{Př. 1.8.}
+	
+	Zadání: Ukažte pro různé tři křivky, že křivkový integrál s počátkem křivky $\vec{r}=(0,0,0)$ a koncem křivky $\vec{r}=(1,1,0)$ z vektorového pole $\vec{V}=(x, y, 0)$ nezávisí na integrační křivce.
+	Řešení: Zvolme jednoduše první cestu podél os
+	
+	$$
+	I=\int_{c} \vec{V} \cdot \mathrm{d} \vec{r}=\int_{0}^{1} x \mathrm{~d} x+\int_{0}^{1} y \mathrm{~d} y=\frac{1}{2}(1+1)=1
+	$$
+	
+	Pro první cestu ani nebylo potřeba používat parametrizaci. Pro druhou cestu zvolíme parametrizaci lineární křivky
+	
+	$$
+	x=\tau, \quad y=\tau, \quad z=0 \Rightarrow \frac{\partial x}{\partial \tau}=1, \frac{\partial y}{\partial \tau}=1, \frac{\partial z}{\partial \tau}=0, \Rightarrow \vec{V}=(\tau, \tau, 0), \frac{\partial \vec{r}}{\partial \tau}=(1,1,0)
+	$$
+	
+	Křivka bude na intervalu $\tau \in(0 ; 1)$
+	
+	$$
+	I=\int_{c} \vec{V} \cdot \mathrm{d} \vec{r}=\int_{c} \vec{V} \cdot \frac{\partial \vec{r}}{\partial \tau} \mathrm{d} \tau=\int_{0}^{1}(\tau+\tau) \mathrm{d} \tau=\int_{0}^{1} 2 \tau \mathrm{d} \tau=1 .
+	$$
+	
+	Třetí křivku zvolíme jako parabolu
+	
+	$$
+	x=\tau, y=\tau^{2}, z=0 \Rightarrow \frac{\partial x}{\partial \tau}=1, \frac{\partial y}{\partial \tau}=2 \tau, \frac{\partial z}{\partial \tau}=0, \Rightarrow \vec{V}=\left(\tau, \tau^{2}, 0\right), \frac{\partial \vec{r}}{\partial \tau}=(1,2 \tau, 0)
+	$$
+	
+	Křivka bude opět na intervalu $\tau \in(0 ; 1)$
+	
+	$$
+	I=\int_{c} \vec{V} \cdot \mathrm{d} \vec{r}=\int_{c} \vec{V} \cdot \frac{\partial \vec{r}}{\partial \tau} \mathrm{d} \tau=\int_{0}^{1}\left(\tau+2 \tau^{3}\right) \mathrm{d} \tau=\left[\frac{\tau^{2}}{2}+\frac{\tau^{4}}{2}\right]_{0}^{1}=1 .
+	$$
+	\\
+	
+	\section{Př. 2.1.}
+	
+	Zadání: Uvažujte dva stejné bodové náboje o shodné hmotnosti a shodném náboji. Náboje jsou od sebe vzdáleny $r$. Jaký musí být poměr mezi nábojem a hmotností, aby se elektrostatická síla vykompenzovala s gravitační? Nepředpokládáme, že by v okolí nábojů byly ještě další zdroje elektrostatického či gravitačního pole.
+	
+	Rešení: Pro výpočet použijeme velikost vektoru síly v Coulombově zákonu (6) a Newtonově gravitačním zákonu $F_{G}=G \frac{m_{1} m_{2}}{r^{2}}$, kde $m_{1}=m_{2}=m$ a $Q_{1}=Q_{2}=Q$. Uvažujeme-li, že velikosti sil se rovnají, pak lze napsat
+	
+	$$
+	G \frac{m^{2}}{r^{2}}=\frac{1}{4 \pi \varepsilon_{0}} \frac{Q^{2}}{r^{2}} \Rightarrow \frac{Q}{m}=\sqrt{4 \pi \varepsilon_{0} G}
+	$$
+\section{Př. 2.5.}
+
+Zadání: Vypočtěte vektor elektrické intenzity ve vzdálenosti $r$ od středu homogenně nabité koule. Uvažujte $|\vec{r}|>R$.
+
+Rešení: Tento příklad lze vyřešit prostým dosazením do rovnice (9). Výpočty v obecném případě však budou relativně komplikované. Pro zjednodušení uvažujme, že střed koule leží v počátku souřadnicové soustavy a bod, ve kterém chceme intenzitu studovat, leží na ose $z$. ( $\mathrm{V}$ případě, kdy se chceme zabývat jiným bodem než na ose $z$, celou soustavu můžeme natočit díky kulové symetrii.) Pro každou část koule s nenulovým $x$ a $y$ existuje stejná část koule ležicí v poloze se zápornými hodnotami $x$ a $y$. Díky tomu jsou složky $E_{x}$ a $E_{y}$ pro pozorovatele na ose $z$ nulové (protilehlé příspěvky se díky principu superpozice vyruší). Jedinou nenulovou složkou zůstane $E_{z}$. Dosazením obdržíme
+
+$$
+\vec{r}-\vec{r}^{\prime}=\left(-x^{\prime},-y^{\prime}, z-z^{\prime}\right) \Rightarrow\left|\vec{r}-\vec{r}^{\prime}\right|^{2}=x^{\prime 2}+y^{\prime 2}+\left(z-z^{\prime}\right)^{2}=r^{\prime 2}-2 z z^{\prime}+z^{2} .
+$$
+
+$z$-ová složka vektoru elektrické intenzity bude rovna
+
+$$
+E_{z}=\frac{1}{4 \pi \varepsilon_{0}} \int \frac{\left(z-z^{\prime}\right) \mathrm{d} Q}{\left(r^{\prime 2}-2 z z^{\prime}+z^{2}\right)^{3 / 2}}
+$$
+
+\section{Př. 3.1.}
+
+Zadání: Uvažujte čtyři náboje $Q_{1}=Q, Q_{2}=2 Q, Q_{3}=-Q, Q_{4}=-2 Q$ rozložené na čtverci tak, že v protilehlých rozích leží náboje se stejnou velikostí, ale s opačným znaménkem. Určete potenciál ve středu čtverce. Uvažujte, že potenciál v nekonečnu je roven nule.
+
+
+
+
+
+Řešení: Uvažujeme-li potenciál v nekonečnu roven nule, pak dle rovnice (13) pro konstantu $K$ platí $K=0$. Vzdálenost jednotlivých nábojů od centra čtverce lze vypočítat pomocí Pythagorovy věty $r=\frac{a}{\sqrt{2}}$. Stejně jako pro náboje a elektrickou intenzitu, lze i pro potenciál využít princip superpozice. Celkový potenciál bude součtem potenciálů od jednotlivých zdrojů $\varphi=\varphi_{1}+\varphi_{2}+\varphi_{3}+\varphi_{4}$, kde
+
+$$
+\varphi_{1}=\frac{Q \sqrt{2}}{4 \pi \varepsilon_{0} a}, \varphi_{2}=\frac{2 Q \sqrt{2}}{4 \pi \varepsilon_{0} a}, \varphi_{3}=\frac{-Q \sqrt{2}}{4 \pi \varepsilon_{0} a}, \varphi_{4}=\frac{-2 Q \sqrt{2}}{4 \pi \varepsilon_{0} a} \Rightarrow \varphi=0 .
+$$
+
+\section{Př. 3.3.}
+
+Zadání: Vypočtěte potenciál v poloze $\vec{r}$ od středu homogenně nabité koule o poloměru $R$. Uvažujte $|\vec{r}|>R$.
+
+Řešení: Pro jednoduchost si počátek souřadnicové soustavy zvolíme ve středu koule. Stejně jako v případě elektrické intenzity, v blízkosti nabité koule si natočíme souřadnicový systém tak, aby polohový vektor byl ve tvaru $\vec{r}=(0,0, z)$, to lze provést díky sférické symetrii zadání. Uvažujeme-li objemové rozložení náboje, lze element náboje napsat ve tvaru $\mathrm{d} Q=\varrho\left(\vec{r}^{\prime}\right) \mathrm{d} V^{\prime}$. Stejně jako v případě výpočtu elektrické intenzity zavedeme sférické souřadnice u čárkovaných souřadnic $\mathrm{d} V^{\prime}=r^{\prime 2} \sin \left(\theta^{\prime}\right) \mathrm{d} r^{\prime} \mathrm{d} \theta^{\prime} \mathrm{d} \phi^{\prime}$. Uvažujeme-li homogenně nabitou kouli, je rozložení náboje $\varrho=\varrho_{0}$ pro $r^{\prime}<R$ a $\varrho=0$ pro $r^{\prime}>R$. Interval integrálu rozdělíme na dvě části, z nichž integrál obsahující interval $r^{\prime} \in(R ; \infty)$ se rovná nule (to plyne z nulovosti hustoty $\mathrm{v}$ daném intervalu). Určitý integrál z nuly je opět nula. Potenciál vyjádříme vztahem
+
+$$
+\begin{gathered}
+	\varphi=\frac{1}{4 \pi \varepsilon_{0}} \int_{0}^{2 \pi} \int_{0}^{\pi} \int_{0}^{R} \frac{\varrho_{0} r^{\prime 2} \sin \left(\theta^{\prime}\right) \mathrm{d} r^{\prime} \mathrm{d} \theta^{\prime} \mathrm{d} \phi^{\prime}}{\left(r^{\prime 2}-2 z r^{\prime} \cos \left(\theta^{\prime}\right)+z^{2}\right)^{1 / 2}}+K= \\
+	=\frac{2 \pi \varrho_{0}}{4 \pi \varepsilon_{0}} \int_{0}^{\pi} \int_{0}^{R} \frac{r^{\prime 2} \sin \left(\theta^{\prime}\right) \mathrm{d} r^{\prime} \mathrm{d} \theta^{\prime}}{\left(r^{\prime 2}-2 z r^{\prime} \cos \left(\theta^{\prime}\right)+z^{2}\right)^{1 / 2}}+K= \\
+	=\left.\frac{2 \pi \varrho_{0}}{4 \pi \varepsilon_{0}} \int_{0}^{R} \frac{r^{\prime}}{z}\left(r^{\prime 2}-2 z r^{\prime} \cos \left(\theta^{\prime}\right)+z^{2}\right)^{1 / 2} \mathrm{~d} r^{\prime}\right|_{0} ^{\pi}+K= \\
+	=\frac{2 \pi \varrho_{0}}{4 \pi \varepsilon_{0}} \int_{0}^{R} \frac{r^{\prime}}{z}\left[\left(r^{\prime 2}+2 z r^{\prime}+z^{2}\right)^{1 / 2}-\left(r^{\prime 2}-2 z r^{\prime}+z^{2}\right)^{1 / 2}\right] \mathrm{d} r^{\prime}+K,
+\end{gathered}
+$$
+
+zde opět uvažujeme $z>R \Rightarrow z-r^{\prime}>0 \Rightarrow\left|r^{\prime}-z\right|=z-r^{\prime}$. Vrátíme-li se zpět k výpočtům, dostaneme:
+
+$$
+\begin{gathered}
+	=\frac{2 \pi \varrho_{0}}{4 \pi \varepsilon_{0}} \int_{0}^{R} \frac{r^{\prime}}{z}\left[r^{\prime}+z-\left(z-r^{\prime}\right)\right] \mathrm{d} r^{\prime}+K= \\
+	=\frac{2 \pi \varrho_{0}}{4 \pi \varepsilon_{0}} \int_{0}^{R} \frac{2 r^{\prime 2}}{z} \mathrm{~d} r^{\prime}+K=\left.\frac{2 \pi \varrho_{0}}{4 \pi \varepsilon_{0}} \frac{2 r^{\prime 3}}{3 z}\right|_{0} ^{R}+K=\frac{2 \pi \varrho_{0}}{4 \pi \varepsilon_{0}} \frac{2 R^{3}}{3 z}+K=\frac{Q}{4 \pi \varepsilon_{0} z}+K,
+\end{gathered}
+$$
+
+kde jsme použili pro výpočet náboje homogenní koule vztah $Q=\varrho_{0} V=\varrho_{0} \frac{4}{3} \pi R^{3}$.
+
+Komentář: Natočíme-li výsledek opět do obecného úhlu $\theta$ a $\phi$, obdržíme jej ve tvaru $\varphi=\frac{Q}{4 \pi \varepsilon_{0}|\vec{r}|}+K$, jenž je na studovaném intervalu identický s potenciálem bodového náboje nacházejícím se v počátku souřadnicové soustavy.
+
+\section{Příklady k procvičení 3.3.}
+
+Uvažujte tlustou sférickou slupku o vnitřním a vnějším poloměru $R_{1}$ a $R_{2}$. Slupka je homogenně nabitá s hustotou náboje $\varrho$. Vypočtěte potenciál v libovolném bodě $r$. Potenciál v nekonečné vzdálenosti od středu slupky uvažujte jako nulový. Nepoužívejte Gaussův zákon.
+
+3.3: $\varphi_{r \leq R_{1}}=\frac{\varrho}{2 \varepsilon_{0}}\left(R_{2}^{2}-R_{1}^{2}\right)$,
+
+$\varphi_{R_{1} \leq r \leq R_{2}}=\frac{\varrho}{2 \varepsilon_{0}}\left(R_{2}^{2}-\frac{r^{2}}{3}-\frac{2 R_{1}^{3}}{3 r}\right)$,
+
+$\varphi_{r \geq R_{2}}=\frac{\varrho}{3 \varepsilon_{0} r}\left(R_{2}^{3}-R_{1}^{3}\right)$.
+
+
+\section{Př. 3.4.}
+
+Zadání: Určete potenciál v blízkosti nabité nekonečně tenké kružnice o poloměru $R$, jejíž střed leží v počátku souřadnicového systému. Potenciál vyšetřujte na ose $z$, která je osou symetrie kružnice. Potenciál v nekonečnu uvažujte jako nulový. Délková hustota kružnice je $\tau_{0}$.
+
+Řešení: Díky symetrii problému zavedeme válcové souřadnice. Kružnice se nachází na souřadnicích $\vec{r}^{\prime}=\left(R \cos \phi^{\prime}, R \sin \phi^{\prime}, 0\right)$. Připomeňme, že pro studovaný bod na ose $z$ platí $\vec{r}=(0,0, z)$. Pro element náboje platí $\mathrm{d} Q=\tau_{0} \mathrm{~d} l=\tau_{0} R \mathrm{~d} \phi$. Element délky $\mathrm{d} l$ kružnice běží od 0 do obvodu kružnice $2 \pi R$. Úhlový element $\mathrm{d} \phi$ běží od 0 do $2 \pi$, proto přepočet $\mathrm{d} l=R \mathrm{~d} \phi$. Konstanta $K$ bude, stejně jako v předešlých případech, nulová. Potenciál spočteme
+
+$$
+\begin{gathered}
+	\varphi=\frac{1}{4 \pi \varepsilon_{0}} \int_{0}^{2 \pi} \frac{\tau_{0} R \mathrm{~d} \phi}{\left(x^{\prime 2}+y^{\prime 2}+z^{2}\right)^{1 / 2}}=\frac{1}{4 \pi \varepsilon_{0}} \int_{0}^{2 \pi} \frac{\tau_{0} R \mathrm{~d} \phi}{\left(R^{2}+z^{2}\right)^{1 / 2}}= \\
+	=\frac{2 \pi R \tau_{0}}{4 \pi \varepsilon_{0}\left(R^{2}+z^{2}\right)^{1 / 2}}=\frac{Q}{4 \pi \varepsilon_{0}\left(R^{2}+z^{2}\right)^{1 / 2}} .
+\end{gathered}
+$$
+
+Pro $z>>R$ přejde výraz opět do Coulombovského potenciálu $\varphi=\frac{Q}{4 \pi \varepsilon_{0} z}$.
+
+
+
+\section{Př. 4.7.}
+
+Zadání: Jaké je napětí mezi dvěma nekonečně dlouhými válcovými plechy o poloměrech $R_{1}$ a $R_{2}\left(R_{1}<R_{2}\right)$ a plošných nábojích $\sigma_{1}$ a $\sigma_{2}$ ? Osy válců leží na stejné přímce. Určete kapacitu takto vytvořeného kondenzátoru.
+
+Řešení: Dle Gaussova zákona $E=\frac{Q}{S \varepsilon_{0}}=\frac{\sigma 2 \pi R l}{2 \pi r l \varepsilon_{0}}=\frac{\sigma R}{r \varepsilon_{0}}$. Napětí indukované válcovitě rozloženým nábojem lze spočítat jako $U=\int_{R_{1}}^{R_{2}} E \mathrm{~d} r$. Informace o náboji na vnějším plechu zjevně není pro zjištění napětí důležitá. Vnější válec uvnitř sebe napětí nezpůsobuje, protože napětí je dáno integrálem z intenzity, která v tomto prostoru závisí na hustotě náboje na vnitřní elektrodě a na jejím poloměru. Napětí vyjde $U=\frac{\sigma_{1} R_{1}}{\varepsilon_{0}} \int_{R_{1}}^{R_{2}} \frac{1}{r} \mathrm{~d} r=\frac{\sigma_{1} R_{1}}{\varepsilon_{0}} \ln \frac{R_{2}}{R_{1}}$.
+
+Kapacitu kondenzátoru definujeme jako $C=\frac{Q}{U}$. Tedy $C=\frac{Q \varepsilon_{0}}{\sigma_{1} R_{1} \ln \frac{R_{2}}{R_{1}}}=\frac{2 \pi l \varepsilon_{0}}{\ln \frac{R_{2}}{R_{1}}}$.
+
+Komentář: Tento výsledek není potřeba nutně považovat jako nefyzikální z důvodu, že $l \rightarrow \infty$, a tedy $C \rightarrow \infty$. Pro $l>>\Delta R$ je možné uvažovat $\mathrm{s}$ výsledkem $C=\frac{2 \pi l \varepsilon_{0}}{\ln \frac{R_{2}}{R_{1}}}$ jako velmi dobrou aproximací popisující reálný případ konečně dlouhého válcového kondenzátoru o délce $l$.
+
+
+\section{Př. 5.2.}
+
+Zadání: Vypočtěte kapacitu dvou soustředných kulových slupek. Použijte limitu, kdy vnější kulová slupka je nekonečně velká.
+
+Řešení: Z minulých kapitol víme, že pro potenciál v okolí bodového či sférického náboje (uvažujme-li, že střed koule je v počátku souřadnicové soustavy) platí $\varphi=\frac{Q}{4 \pi \varepsilon_{0} r}$. Rozdíl potenciálů v polohách $R_{1}$ a $R_{2}$ bude $U=\frac{Q_{1}}{4 \pi \varepsilon_{0}}\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)$. Všimněme si, že vnější slupka nepřispívá do pole mezi slupkami (výraz obsahuje pouze náboj $Q_{1}$ ). Kapacita takového kondenzátoru se rovná
+
+$$
+C=\frac{4 \pi \varepsilon_{0}}{\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)}
+$$
+
+$\mathrm{V}$ případě poloměru vnější slupky jdoucí do nekonečna $R_{2} \rightarrow \infty$ se kapacita kulového kondenzátoru (či osamocené koule) spočte $C=4 \pi \varepsilon_{0} R_{1}$.
+
+\section{Př. 6.5.}
+
+Zadání: Uvažujme, že jsme mezi desky deskového kondenzátoru vložili dielektrikum. Desky kondenzátoru leží ve vzájemné vzdálenosti $d$ a dielektrikum má šířku $a$, kde $d>a$ (dielektrikum nevyplňuje mezeru mezi deskami úplně). Vyjádřete kapacitu kondenzátoru s dielektrikem $C$ jako funkci kapacity bez dielektrika $C_{0}$.
+
+Řešení: Jak jsme si již několikrát uvedli, kapacita deskového kondenzátoru je $C_{0}=S \varepsilon_{0} / d$. Z výše uvedeného plyne, že kapacita kondenzátoru (s dielektrikem) se nezmění, ať umístíme dielektrikum mezi desky kamkoli. Elektrická intenzita v oblasti bez dielektrika bude rovna $E_{\text {bez }}=\sigma / \varepsilon_{0}$, intenzita $\mathrm{v}$ oblasti s dielektrikem bude $E_{\text {diel }}=\sigma /\left(\varepsilon_{0} \varepsilon_{r}\right)$. Napětí pak bude dráhovým integrálem těchto intenzit. Vzhledem k tomu, že intenzita zůstává na jednotlivých oblastech konstantní, lze napětí zapsat jako
+
+$$
+U=\frac{\sigma}{\varepsilon_{0}}(d-a)+\frac{\sigma}{\varepsilon_{0} \varepsilon_{r}} a,
+$$
+
+kde $d-a$ označuje šířku oblasti bez dielektrika a $a$ šířku dielektrika. Kapacitu vypočítáme podle definice (21) jako
+
+
+
+$$
+C=\frac{S \varepsilon_{0}}{(d-a)+\frac{1}{\varepsilon_{r}} a}=\frac{C_{0} d}{(d-a)+\frac{1}{\varepsilon_{r}} a} .
+$$
+
+\section{Př. 7.3.}
+
+Zadání: Uvažujme krychli, v jejíchž hranách se nachází 12 rezistorů o stejných odporech $R=1 \Omega$ (viz obrázek 40 a)). V každém rohu se nachází uzel. Jednotlivé uzly očíslujeme od 1 do 8. Soustavu napojíme na zdroj emn. v protilehlých rozích (uzly 1 a 8). Vypočtěte odpor celé soustavy.
+
+
+
+
+Řešení: Při bližším pohledu na danou soustavu si všimněme, že (díky rovnosti všech odporů) v uzlech $2,3,4$, a pak dále v uzlech $5,6,7$ je stejný potenciál. Zapojení tak půjde zakreslit v jiném tvaru (viz obrázek 40 b)), jenž má stejný výsledný odpor, daný vztahem
+
+$$
+R=\frac{R}{3}+\frac{R}{6}+\frac{R}{3}=\frac{5}{6} R .
+$$
+
+
+\section{Př. 7.5.}
+
+Zadání: Uvažujme Gaussův zákon ve tvaru (10) a Ampérův zákon (později probereme podrobně) ve tvaru
+
+$$
+\vec{\nabla} \times \vec{B}=\mu_{0} \vec{j}+\mu_{0} \varepsilon_{0} \frac{\partial \vec{E}}{\partial t}
+$$
+
+kde $\vec{B}$ vyjadřuje vektor magnetické indukce a $\mu_{0}$ označuje permeabilitu vakua. Odvod’te z těchto dvou zákonů rovnici kontinuity.
+
+Řešení: Divergencí Ampérova zákona získáme
+
+$$
+\vec{\nabla} \cdot \vec{\nabla} \times \vec{B}=\mu_{0} \vec{\nabla} \cdot \vec{j}+\mu_{0} \varepsilon_{0} \vec{\nabla} \cdot \frac{\partial \vec{E}}{\partial t}
+$$
+
+Divergenci a parciální derivaci podle času lze zaměnit $\vec{\nabla} \cdot \frac{\partial \vec{E}}{\partial t}=\frac{\partial}{\partial t} \vec{\nabla} \cdot \vec{E}$. Divergence elektrické intenzity je pak z Gaussova zákona hustota náboje podělená permitivitou vakua. Na levé straně se nachází operátor divergence $\mathrm{z}$ rotace. $\mathrm{Z}$ předešlého textu víme, že tento člen se rovná nule
+
+$$
+0=\mu_{0} \vec{\nabla} \cdot \vec{j}+\mu_{0} \frac{\partial \varrho}{\partial t}
+$$
+
+Podělením permeability na obou stranách rovnice získáme rovnici kontinuity.
+
+\section{Př. 8.1.}
+
+Zadání: Uvažujte elektron o náboji $-q$ a hmotnosti $m$ v homogenním magnetickém poli o velikosti $\vec{B}=\left(0,0, B_{z}\right)$. Elektron se pohybuje rychlostí $\vec{v}=\left(v_{x}, v_{y}, v_{z}\right)$. Vypočtěte trajektorii částice. Zjistěte jak se situace změní ve chvíli, kdy se částice pohybuje kolmo vzhledem k magnetickým indukčním čarám.
+
+Řešení: Dle druhého Newtonova zákona a Lorentzovy síly platí
+
+$$
+m \vec{a}=\vec{F} \Rightarrow m\left(\frac{\mathrm{d} v_{x}}{\mathrm{~d} t}, \frac{\mathrm{d} v_{y}}{\mathrm{~d} t}, \frac{\mathrm{d} v_{z}}{\mathrm{~d} t}\right)=-q\left(v_{x}, v_{y}, v_{z}\right) \times\left(0,0, B_{z}\right)=-q B_{z}\left(v_{y},-v_{x}, 0\right)
+$$
+
+Z této soustavy rovnic lze vyjádřit tři diferenciální rovnice
+
+$$
+\frac{\mathrm{d} v_{x}}{\mathrm{~d} t}=-\frac{q B_{z}}{m} v_{y}, \frac{\mathrm{d} v_{y}}{\mathrm{~d} t}=\frac{q B_{z}}{m} v_{x}, \frac{\mathrm{d} v_{z}}{\mathrm{~d} t}=0
+$$
+
+Třetí rovnice má triviální řešení $v_{z}=$ konst. Řešení prvních dvou rovnic obdržíme derivací první rovnice a dosazení za $\frac{\mathrm{d} v_{y}}{\mathrm{~d} t}$ z druhé
+
+$$
+\frac{\mathrm{d}^{2} v_{x}}{\mathrm{~d} t^{2}}=-\left(\frac{q B_{z}}{m}\right)^{2} v_{x} \Rightarrow v_{x}=A \cos (\omega t+\varphi) \Rightarrow v_{y}=A \sin (\omega t+\varphi)
+$$
+
+kde $\omega=\frac{q B_{z}}{m}$ je úhlová rychlost a $A^{2}=v_{x}^{2}+v_{y}^{2}$ je kvadrát velikosti rychlosti v rovině $x y$. Z výše uvedeného řešení vyplývá, že tento kvadrát je v čase konstantní a je určen počáteční rychlostí. Úhel $\varphi$ určují také počáteční podmínky. Částice se bude pohybovat po šroubovici orientovanou ve směru $z$, podél magnetických indukčních čar.
+
+V případě pohybu kolmém na magnetické indukční čáry vymizí složka rychlosti $v_{z}$. Částice se bude pohybovat po kružnici jejíž poloměr vyjádříme jako $r=\frac{v}{\omega}=\frac{m v}{q B}$.
+
+Komentář: Pohyb nabitých částic v magnetickém poli znázorňuje obrázek 46. Částice v prostředí ztrácejí rychlost a poloměr jejich dráhy se zmenšuje, proto nejsou znázorněné křivky kružnice (nebo šroubovice), ale spirály.
+
+\section{Př. 8.2.}
+
+Zadání: Uvažujte kruhovou proudovou smyčku ve vnějším homogenním magnetickém poli. Necht normála ke smyčce uzavírá s vektory magnetické indukce $\vec{B}$ úhel $\theta$. Jak velký moment síly působí na smyčku?
+
+
+
+
+
+Řešení: Uvažujme, že kruhová smyčka leží v rovině $x y$ a vektory magnetické indukce v rovině $x z$ a s osou $z$ svírají úhel $\theta$ - viz obrázek 47. Polohový vektor smyčky je $\vec{l}=(R \cos \varphi, R \sin \varphi, 0)$. Element tohoto vektoru se rovná $\mathrm{d} \vec{l}=(-R \sin \varphi, R \cos \varphi, 0) \mathrm{d} \varphi$. Magnetické pole směřuje ve směru $\vec{B}=(-B \sin \theta, 0, B \cos \theta)$, kde $B$ značí velikost vektoru magnetické indukce. Z Lorentzovy síly (47) jasně vyplývá, že na element vodiče působí element síly d $\vec{F}=I \mathrm{~d} \vec{l} \times \vec{B}$. Moment sil pak zapíšeme jako $\vec{M}=\int \vec{r} \times \mathrm{d} \vec{F}$, kde $\vec{r} \equiv \vec{l}$ odpovídá polohovému vektoru kruhu, kde počátek souřadnicové soustavy se nachází na ose rotace. Dosazením do vzorců získáme
+
+$$
+\begin{gathered}
+	\vec{M}=I \int \vec{l} \times(\mathrm{d} \vec{l} \times \vec{B})= \\
+	=I \int_{0}^{2 \pi}(R \cos \varphi, R \sin \varphi, 0) \times[(-R \sin \varphi, R \cos \varphi, 0) \times(-B \sin \theta, 0, B \cos \theta)] \mathrm{d} \varphi= \\
+	=I B R^{2} \int_{0}^{2 \pi}(\cos \varphi, \sin \varphi, 0) \times(\cos \varphi \cos \theta, \sin \varphi \cos \theta, \cos \varphi \sin \theta) \mathrm{d} \varphi= \\
+	=I B R^{2} \int_{0}^{2 \pi}\left(\sin \varphi \cos \varphi \sin \theta,-\cos ^{2} \varphi \sin \theta, 0\right) \mathrm{d} \varphi= \\
+	=I B R^{2} \sin \theta \int_{0}^{2 \pi}\left(\sin \varphi \cos \varphi,-\cos ^{2} \varphi, 0\right) \mathrm{d} \varphi= \\
+	=-I B R^{2} \sin \theta\left(\frac{1}{2} \cos ^{2} \varphi, \frac{1}{2}\left[\varphi+\frac{1}{2} \sin ^{2}(2 \varphi)\right], 0\right)_{0}^{2 \pi}=
+\end{gathered}
+$$
+$$
+=-I B R^{2} \sin \theta(0, \pi, 0)=-I B \pi R^{2} \sin \theta(0,1,0)=-I B S \sin \theta(0,1,0)=I \vec{S} \times \vec{B}
+$$
+
+Z výsledku vidíme, že moment síly je úměrný vektorovému součinu plochy kruhové smyčky $\vec{S}=(0,0, S)$ (orientované pomocí normály) a vektoru magnetické indukce.
+
+Moment síly v našem případě směřuje v směru osy $y$, která se tak stává osou otáčení smyčky. Moment se snaží smyčku otočit tak, aby rovina smyčky byla kolmá na pole a aby magnetické indukční čáry generované smyčkou a vnějším polem směřovaly stejným směrem.
+
+Komentář: Čtenář může zkontrolovat, že síla působící na kroužek se rovná
+
+$$
+\vec{F}=-\int_{0}^{2 \pi} I \vec{B} \times \mathrm{d} \vec{l}=I B R \int_{0}^{2 \pi}(\cos \varphi \cos \theta, \sin \varphi \cos \theta,-\cos \varphi \sin \theta) \mathrm{d} \varphi=\overrightarrow{0}
+$$
+\section{Př. 8.4.}
+
+Zadání: Mějme dlouhou cívku (solenoid). Určete magnetické pole hluboko uvnitř cívky a na konci cívky, protéká-li cívkou proud $I$.
+
+Řešení: Řez cívkou vykresluje obrázek 49. Oranžový obdélník představuje myšlenou křivku, podél které zkoumáme magnetické pole. Uvažujeme-li solenoid nekonečně dlouhý, můžeme magnetické pole venku oproti poli uvnitř zanedbat. Uvážíme-li libovolnou uzavřenou křivku ležící mimo solenoid, tak skrze tuto křivku poteče nulový proud (zanedbáme-li proud ve směru solenoidu) a magnetické pole mimo solenoid musí být nulové. Uvnitř je magnetické pole orientováno rovnoběžně s cívkou (viz zakreslený vektor magnetické indukce). Uvážíme-li svislé strany obdélníku, skalární součin těchto úseků s vektory magnetické indukce se rovná nule právě kvůli kolmosti vektorů $\vec{B}$ na tyto úseky. Jediným přispívajícím úsekem zůstane vnitřní horizontální strana o délce $a$, ta, která je s magnetickým polem rovnoběžná. Pro cívku platí rovnice (52), tedy $\oint \vec{B} \mathrm{~d} \vec{r}=\int_{0}^{a} B \mathrm{~d} r=B \int_{0}^{a} \mathrm{~d} r=B a$. Uzavřenou křivkou však probíhá více než jeden vodič. Celkem v sobě úsek o délce $a$ uzavírá $N$ vodičů. Celkový proud pak odpovídá $N$ násobku proudu protékajícího cívkou. Takže platí
+
+$$
+B=\frac{\mu_{0} I N}{a} .
+$$
+
+Označíme-li si hustotu závitů $\eta=N / a$, lze magnetické pole uvnitř dlouhé cívky vyjádřit jako
+
+$$
+B=\mu_{0} I \eta
+$$
+$$
+\vec{B}=\vec{\nabla} \times \vec{A}=\vec{\nabla} \times\left(\frac{Q t \vec{r}}{r^{3}}\right)=Q t \vec{\nabla} \times\left(\frac{\vec{r}}{r^{3}}\right)=-Q t \vec{\nabla} \times \vec{\nabla} \cdot \frac{1}{r}=0 .
+$$
+
+Elektrická intenzita se rovná
+
+$$
+\vec{E}=-\vec{\nabla} \cdot \frac{Q}{r}-\frac{\partial}{\partial t}\left(\frac{Q t \vec{r}}{r^{3}}\right)=\frac{Q \vec{r}}{r^{3}}-\frac{Q \vec{r}}{r^{3}}=0 .
+$$
+
+Komentář: Z výsledku je patrné, že při jiné kalibraci bychom mohli zvolit potenciál a vektorový potenciál ve tvaru $\varphi=0$ a $\vec{A}=0$, a výsledné $\vec{E}$ a $\vec{B}$ by zůstalo nezměněné. Kalibrační funkce $f$ by v tomto případě odpovídala $f=-Q t / r$. Ze stejného důvodu lze potenciál z bodového zdroje zapsat pomocí pouze vektorového potenciálu jako $\vec{A}=-Q t \vec{r} / r^{3}$.
+
+\section{Př. 11.1.}
+Zadání: Uvažujme obvod. Nejdříve obvod zapojíme tak, aby zdroj emn. nabil kondenzátor o kapacitě $C$ (zapojení 1). Poté se přepínač přepojí tak (zapojení 2), aby v obvodu byl kondenzátor, cívka (o indukčnosti $L$ ) a rezistor (o odporu $R$ ), takzvaný LRC obvod. Jak se kondenzátor vybíjí, vytváří v obvodu proud. Jaká je časová závislost proudu na čase?
+Řešení: Kondenzátor v obvodu funguje jako zdroj napětí, označme $U_{C}=Q / C$ (v čase $t_{0}=0$ je $\left.Q=Q_{0}\right)$. Naopak rezistor $U_{R}=-R I$ a cívka $U_{L}=-L \frac{\partial I}{\partial t}$ způsobují v tomto případě úbytek napětí, proto jsme zvolili znaménko mínus. Projdeme-li celou smyčkou, je součet všech napětí nulový
+
+$$
+U_{C}+U_{L}+U_{R}=0 \Rightarrow \frac{Q}{C}-L \frac{\partial I}{\partial t}-R I=0
+$$
+
+Na počátku máme kondenzátor nabitý. Proud začne odvádět náboj z kondenzátoru. Čím bude větší proud, tím bude větší i úbytek náboje na kondenzátoru $I=-\frac{\partial Q}{\partial t}$
+
+$$
+\frac{Q}{C}+L \frac{\partial^{2} Q}{\partial t^{2}}+R \frac{\partial Q}{\partial t}=0 \Rightarrow Q+L C \frac{\partial^{2} Q}{\partial t^{2}}+C R \frac{\partial Q}{\partial t}=0
+$$
+
+Pro nalezení přesného řešení použijeme substituci
+
+$$
+Q=y e^{c t} \Rightarrow \frac{\partial Q}{\partial t}=\frac{\partial y}{\partial t} e^{c t}+y c e^{c t}, \quad \frac{\partial^{2} Q}{\partial t^{2}}=\frac{\partial^{2} y}{\partial t^{2}} e^{c t}+2 \frac{\partial y}{\partial t} c e^{c t}+y c^{2} e^{c t} .
+$$
+
+$\mathrm{S}$ touto substitucí se výše uvedená diferenciální rovnice změní na
+
+$$
+y e^{c t}+L C \frac{\partial^{2} y}{\partial t^{2}} e^{c t}+L C 2 \frac{\partial y}{\partial t} c e^{c t}+L C y c^{2} e^{c t}+C R \frac{\partial y}{\partial t} e^{c t}+C R y c e^{c t}=0 .
+$$
+
+Každý člen této rovnice podělíme výrazem $e^{c t}$. Přerovnáním členů obdržíme
+
+$$
+y\left(1+C R c+L C c^{2}\right)+\frac{\partial y}{\partial t}(L C 2 c+C R)+L C \frac{\partial^{2} y}{\partial t^{2}}=0 .
+$$
+Pokud si zvolíme $c=-R / 2 L$, obdržíme již známou diferenciální rovnici
+
+$$
+y\left(1-\frac{R^{2} C}{4 L}\right)+L C \frac{\partial^{2} y}{\partial t^{2}}=0
+$$
+
+jejíž řešení se rovná
+
+$$
+y=A \cos (\omega t+\varphi), \quad \omega^{2}=\frac{1}{L C}-\frac{R^{2}}{4 L^{2}}
+$$
+
+Z počátečních podmínek zjistíme integrační konstanty $A, \varphi$. Na počátku uvažujeme kondenzátor nabitý nábojem $Q_{0}$ a proud je nulový $I_{0}=0$. Výsledné řešení zapíšeme ve tvaru
+
+$$
+Q_{0}=A \cos (\varphi), \tan (\varphi)=\frac{c}{\omega} \Rightarrow Q=Q_{0} e^{-\frac{R t}{2 L}} \frac{\cos (\omega t+\varphi)}{\cos (\varphi)}, \omega^{2}=\frac{1}{L C}-\frac{R^{2}}{4 L^{2}}, \varphi=\arctan \left(-\frac{R}{2 L \omega}\right)
+$$
+\section{Př. 11.2.}
+
+Zadání: Uvažujte cívku tvaru toroidu, jež má průřez] tvaru obdélníku. Vypočtěte vlastní indukčnost cívky.
+
+Řešení: Magnetickou indukci uvnitř cívky určíme dle Ampérova zákona $B 2 \pi \rho=N \mu_{0} I$, kde $N$ značí počet závitů, $I$ je proud protékající cívkou, $\rho$ označuje vzdálenost od osy a $B$ je velikost magnetické indukce. Magnetický tok protékající jedním závitem pak vypočteme $\phi=\int B \mathrm{~d} S=\int B \mathrm{~d} \rho \mathrm{d} z$, kde $z \in(0 ; b)$ a $\rho \in(R ; R+a)$. Integrál zjistíme ze vztahu
+
+$$
+\phi=\int \frac{N \mu_{0} I}{2 \pi \rho} \mathrm{d} \rho \mathrm{d} z=\left.\left.\frac{N \mu_{0} I}{2 \pi} z\right|_{0} ^{b} \ln \rho\right|_{R} ^{R+a}=\frac{N \mu_{0} I b}{2 \pi} \ln \left(\frac{R+a}{R}\right) .
+$$
+
+Podle vztahu pro tok všemi $N$ závity $N \frac{\mathrm{d} \phi}{\mathrm{d} t}=L \frac{\partial I}{\partial t}$ lze odvodit
+
+$$
+L=\frac{N^{2} \mu_{0} b}{2 \pi} \ln \left(\frac{R+a}{R}\right) .
+$$
+
+
+\section{Př. 12.1.}
+
+Zadání: Najděte komplexní číslo $\tilde{a}=i+\sqrt{3}$ ve tvaru $\tilde{a}=A e^{i \varphi}$, kde $\varphi$ a $A$ jsou reálná čísla.
+
+Řešení: Tvar $\tilde{a}=A e^{i \varphi}$ můžeme přepsat do podoby $\tilde{a}=A(\cos \varphi+i \sin \varphi)$. Víme-li, že platí $\cos \varphi^{2}+\sin \varphi^{2}=1$, pak se velikost komplexního čísla rovná $A=\left(1^{2}+\sqrt{3}^{2}\right)^{1 / 2}=2$.
+
+Dále lze zapsat rovnost
+
+$$
+\tilde{a}=i+\sqrt{3}=2(\cos \varphi+i \sin \varphi) \Rightarrow \cos \varphi=\frac{\sqrt{3}}{2}, \sin \varphi=\frac{1}{2} \Rightarrow \varphi=\frac{\pi}{6} .
+$$
+
+Výsledek vyjádříme ve tvaru $\tilde{a}=2 e^{i \frac{\pi}{6}}$.
+
+Komentář: Polární zápis je vhodný pro násobení komplexních čísel. Uvažujme dvě komplexní čísla $\tilde{a}_{1}=A_{1} e^{i \varphi_{1}}$ a $\tilde{a}_{2}=A_{2} e^{i \varphi_{2}}$. Jejich násobek je $\tilde{a}_{1} \tilde{a}_{2}=A_{1} A_{2} e^{i\left(\varphi_{1}+\varphi_{2}\right)}$.
+
+\section{Příklady k procvičení 12.5 .}
+
+Uvažujte paralelně zapojenou cívku o indukčnosti $L$ a rezistor o odporu $R$. K této soustavě je v uzavřeném obvodu do série zapojený ampérmetr o zanedbatelném odporu a zdroj střídavého napětí $\mathcal{E}$. Z ampérmetru je zřejmé, že ve chvíli kdy je proud maximální, napětí na zdroji nabývá hodnoty jedné poloviny maximální hodnoty. Určete frekvenci zdroje napětí.
+
+Řešení:  $\omega=\frac{R}{\sqrt{3} L}$.
+
+
+\end{document}

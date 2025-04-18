@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc13" dpi="120" arch="Win64" script="muParser" windows="4" expand="1" log="[2024-12-03 19:42:44&#9;Plot: ''Graph2'']&#10;Non-linear Fit of dataset: Table2_n, using function: A+B/(x^2)+C/(x^4)&#10;Sort: No&#10;Weighting Method: No weighting&#10;Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001&#10;From x = 4.0460000000000e+02 to x = 6.2340000000000e+02&#10;&#10;Parameter                        Value                               Error                                &#10;------------------------------------------------------------&#10;A                                     1.5054499221024e+00  9.0242208513608e-04   &#10;B                                      3.8479638203372e+03  4.5243569366508e+02  &#10;C                                     3.0854166951984e+07  5.2163171712875e+07  &#10;------------------------------------------------------------&#10;Errors were scaled with sqrt(Chi^2/doF) = 1.4255865263025e-04&#10;&#10;Statistics                                     Table2_n                                      &#10;----------------------------------------------------&#10;N (data points)                             5                                                  &#10;Degrees of Freedom (doF)            2                                                  &#10;Chi^2/doF                                   2.0322969439752e-08               &#10;RSS (Residual Sum of Squares)     4.0645938879504e-08               &#10;R                                                  9.9986444590265e-01               &#10;R^2                                              9.9972891018021e-01               &#10;Adjusted R^2                               9.9945782036041e-01               &#10;RMSE (Root Mean Squared Error)  1.4255865263025e-04               &#10;Iterations                                     2                                                  &#10;Status                                          success                                       &#10;----------------------------------------------------&#10;[2024-12-03 19:58:24&#9;Plot: ''Graph2'']&#10;Non-linear Fit of dataset: Table2_n, using function: A+B/(x^2)&#10;Sort: No&#10;Weighting Method: No weighting&#10;Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001&#10;From x = 4.0460000000000e+02 to x = 6.2340000000000e+02&#10;&#10;Parameter                        Value                               Error                                &#10;------------------------------------------------------------&#10;A                                     1.5049310671007e+00  1.8752190741354e-04   &#10;B                                      4.1140721372042e+03  4.2397783944721e+01  &#10;------------------------------------------------------------&#10;Errors were scaled with sqrt(Chi^2/doF) = 1.2616940857975e-04&#10;&#10;Statistics                                     Table2_n                                      &#10;----------------------------------------------------&#10;N (data points)                             5                                                  &#10;Degrees of Freedom (doF)            3                                                  &#10;Chi^2/doF                                   1.5918719661364e-08               &#10;RSS (Residual Sum of Squares)     4.7756158984091e-08               &#10;R                                                  9.9984073144902e-01               &#10;R^2                                              9.9968148826451e-01               &#10;Adjusted R^2                               9.9957531768602e-01               &#10;RMSE (Root Mean Squared Error)  1.2616940857975e-04               &#10;Iterations                                     3                                                  &#10;Status                                          success                                       &#10;----------------------------------------------------&#10;">
+	<window type="1" name="Table1" date="2460646.632951" x="0" y="0" w="305" h="448">
+		<tab rows="30" cols="2" labels="0">
+			<col name="phi1" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="286.314722;276.670833;270.612778;275.418611;279.265;"/>
+			<col name="phi2" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="146.077778;136.442778;130.3825;135.195278;139.029722;"/>
+		</tab>
+	</window>
+	<window type="1" name="barvy" date="2460646.6543578" x="305" y="0" w="1047" h="448">
+		<tab rows="30" cols="6" labels="0">
+			<col name="cervena - 623.4" type="6" num="0" prec="13" plot="1" width="145" stat="0" data="184.020833;228.609722;"/>
+			<col name="zluta - 576.9" type="6" num="0" prec="13" plot="2" width="148" stat="0" data="183.960833;228.684167;"/>
+			<col name="modrozelena - 491.6" type="6" num="0" prec="13" plot="2" width="189" stat="0" data="183.738056;228.54.04;"/>
+			<col name="Modra - 435.8" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="183.31.25;229.6.28;"/>
+			<col name="Fialova - 404.6" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="183.21.46;229.16.01;"/>
+			<col name="4" type="6" num="0" prec="13" plot="2" width="100" stat="0"/>
+		</tab>
+	</window>
+	<window type="1" name="Table2" date="2460647.7944219" x="411" y="203" w="921" h="448" active="1">
+		<tab rows="26" cols="6" labels="0">
+			<col name="λ[nm]" type="6" num="0" prec="6" plot="1" width="100" stat="0" data="623.4;576.9;491.6;435.8;404.6;"/>
+			<col name="Barva" type="6" num="0" prec="6" plot="2" width="100" stat="0" data="Cervena;Zluta;Modrozelena;Modra;Fialova;"/>
+			<col name="\phi 1 [^\circ]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="184.020833;183.960833;183.738056;183.523611;183.362778;"/>
+			<col name="\phi 2 [^\circ]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="228.609722;228.684167;228.901111;229.107778;229.266944;"/>
+			<col name="n" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="1.51566;1.51713;1.52196;1.52658;1.53009;"/>
+			<col name="1" type="6" num="0" prec="13" plot="5" width="100" formula="5e-05*col(&quot;n&quot;)" stat="0" comment="5e-05* Table2_n" data="7.5783e-05;7.58565e-05;7.6098e-05;7.6329e-05;7.65045e-05;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph2" date="2460647.8189118" x="1304" y="345" w="621" h="532" dpi="120">
+		<layout cw="603" ch="471" w="512" h="384" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="593" h="461" autoscale="1" maxMajorTicks="20" antialias="1" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00829187" y="0.0106157" w="0.983416" h="0.978769"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="79" y="13" w="505" h="402" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0"/>
+			<curve type="1" z="21" table="Table2" x="λ[nm]" y="n" from="0" to="-1" line="0" lc="#000000" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="24" table="Table2" col="1" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<curve type="19" z="22" name="user1Fit1" f="0" y="A+B/(x^2)+C/(x^4)" from="404.6" to="623.4" points="100" line="1" lc="#ff0000" lw="1.8" ls="0" brc="#000000" brs="0">
+				<param name="A" val="1.50544992210241"/>
+				<param name="B" val="3847.96382033723"/>
+				<param name="C" val="30854166.9519837"/>
+			</curve>
+			<curve type="19" z="23" name="user1Fit2" f="0" y="A+B/(x^2)" from="404.6" to="623.4" points="100" line="1" lc="#000000" lw="1.8" ls="0" brc="#000000" brs="0">
+				<param name="A" val="1.50493106710073"/>
+				<param name="B" val="4114.07213720424"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="1.514" to="1.532" step="0" maj="10" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8.17939,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8.17939,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8.17939,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8.17939,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="400" to="650" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8.17939,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8.17939,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8.17939,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="39"/>
+				<labels space="4" font="Lucida Sans Unicode,8.17939,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="408.928571428571" y="1.53182044887781" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,8.17939,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)Cauchyho vztah&#10;\l(3)%(3)"/>
+			<filter type="11" inCrv="0" from="404.6" to="623.4" outCrv="1" points="100" recalc="1" sort="0" fmt="e" prec="13" modifiedData="0" alg="0" sclErr="1" chi2="4.06459388795039e-08" func="1" pasteResults="0" model="user1" form="A+B/(x^2)+C/(x^4)">
+				<parameter name="A" val="1.50544992210241" err="40.0711924581474"/>
+				<parameter name="B" val="3847.96382033723" err="10072251375914"/>
+				<parameter name="C" val="30854166.9519837" err="1.33887741710843e+23"/>
+			</filter>
+			<filter type="11" inCrv="0" from="404.6" to="623.4" outCrv="2" points="100" recalc="1" sort="0" fmt="e" prec="13" modifiedData="0" alg="0" sclErr="1" chi2="4.77561589840906e-08" func="1" pasteResults="0" model="user1" form="A+B/(x^2)">
+				<parameter name="A" val="1.50493106710073" err="2.20900088123036"/>
+				<parameter name="B" val="4114.07213720424" err="112921900860.29"/>
+			</filter>
+		</tab>
+	</window>
+</qti>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc13" dpi="144" arch="Win64" script="muParser" windows="9" expand="1">
+	<window type="1" name="U750V" date="2460773.5850358" x="0" y="0" w="729" h="601" label="Zavislost proudu na intenzite svetla pri konst urychlovacim napeti-U750V" title="2">
+		<tab rows="30" cols="4" labels="0">
+			<col name="Klin uroven" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="1;2;3;4;5;6;7;8;"/>
+			<col name="I-a [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="78.8;62;48;38.2;32;26;20.5;16.4;"/>
+			<col name="I-9 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="9.2;7.1;5.5;4.38;3.6;2.86;2.29;1.82;"/>
+			<col name="I-13 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0.74;0.57;0.44;0.35;0.28;0.22;0.18;0.14;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph1" date="2460773.59513" x="729" y="0" w="593" h="538" dpi="120">
+		<layout cw="575" ch="477" w="512" h="384" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="565" h="467" autoscale="1" maxMajorTicks="20" antialias="1" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00869565" y="0.0104822" w="0.982609" h="0.979036"/>
+			<title text="Title" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="42"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="54" y="39" w="512" h="384" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0"/>
+			<curve type="1" z="21" table="U750V" x="Klin uroven" y="I-a [uA]" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="1" z="22" table="U750V" x="Klin uroven" y="I-9 [uA]" from="0" to="-1" line="0" lc="#e45252" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#e45252" lw="1" ls="0" brc="#e45252"/>
+			</curve>
+			<curve type="1" z="23" table="U750V" x="Klin uroven" y="I-13 [uA]" from="0" to="-1" line="0" lc="#2ad330" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#2ad330" lw="1" ls="0" brc="#2ad330"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="80" step="0" maj="9" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="9" step="0" maj="10" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="0.176125244618395" y="77.911227154047" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)&#10;\l(3)%(3)"/>
+		</tab>
+	</window>
+	<window type="1" name="Table1" date="2460773.5958423" x="722" y="38" w="729" h="601" label="Zavislost proudu na intenzite svetla pri konst urychlovacim napeti-U600V" title="2">
+		<tab rows="30" cols="4" labels="0">
+			<col name="Klin uroven" type="6" num="0" prec="13" plot="1" width="125" stat="0" data="1;2;3;4;5;6;7;8;"/>
+			<col name="I-a [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="10;8;6.4;5.5;4.2;4;3;2.3;"/>
+			<col name="I-9 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="1.43;1.12;0.88;0.71;0.52;0.47;0.38;0.31;"/>
+			<col name="I-13 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0.17;0.13;0.1;0.08;0.07;0.05;0.04;0.03;"/>
+		</tab>
+	</window>
+	<window type="1" name="Table2" date="2460773.6005326" x="1028" y="95" w="305" h="448">
+		<tab rows="30" cols="2" labels="0">
+			<col name="1" type="6" num="0" prec="13" plot="1" width="100" stat="0"/>
+			<col name="2" type="6" num="0" prec="13" plot="2" width="100" stat="0"/>
+		</tab>
+	</window>
+	<window type="1" name="Lvl1" date="2460773.6010843" x="657" y="96" w="972" h="448" label="zavislost proudu na napeti Un pri konstantni intenzite - uroven 1" title="2">
+		<tab rows="30" cols="4" labels="0">
+			<col name="Un [v]" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="770;762;750;740;728;716;696;674;644;597;564;505;457;420;"/>
+			<col name="I-a [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="99;90;80;70;60;50;40;30;20;10;6;2.2;1.2;0.7;"/>
+			<col name="I-9 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="11.45;10.25;9.2;8.1;7.1;6.16;5;3.73;2.53;1.38;0.86;0.37;0.15;0.08;"/>
+			<col name="I-13 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0.88;0.81;0.75;0.68;0.61;0.55;0.47;0.37;0.28;0.17;0.12;0.06;0.02;0.01;"/>
+		</tab>
+	</window>
+	<window type="1" name="lvl2" date="2460773.6080742" x="809" y="122" w="972" h="448" label="zavislost proudu na napeti Un pri konstantni intenzite - uroven 2" title="2">
+		<tab rows="30" cols="4" labels="0">
+			<col name="Un [v]" type="6" num="0" prec="13" plot="1" width="125" stat="0" data="795;784;748;692;645;593;556;500;444;"/>
+			<col name="I-a [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="100;90;59;30;17.8;8;4;2;0.3;"/>
+			<col name="I-9 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="11.13;9.89;6.81;3.72;2.23;1.08;0.61;0.25;0.09;"/>
+			<col name="I-13 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0.81;0.75;0.56;0.35;0.24;0.13;0.08;0.04;0.01;"/>
+		</tab>
+	</window>
+	<window type="1" name="lvl3" date="2460773.610608" x="869" y="199" w="972" h="448" label="zavislost proudu na napeti Un pri konstantni intenzite - uroven 3" title="2">
+		<tab rows="30" cols="4" labels="0">
+			<col name="Un [v]" type="6" num="0" prec="13" plot="1" width="125" stat="0" data="825;802;754;706;642;592;538;480;424;"/>
+			<col name="I-a [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="100;81;50;28;12;6.1;3;1;0.5;"/>
+			<col name="I-9 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="10.75;8.86;5.64;3.38;1.59;0.86;0.38;0.14;0.05;"/>
+			<col name="I-13 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0.75;0.64;0.46;0.31;0.17;0.1;0.05;0.02;0.01;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph2" date="2460773.6132248" x="0" y="13" w="611" h="538" dpi="120">
+		<layout cw="593" ch="477" w="512" h="384" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="583" h="467" autoscale="1" maxMajorTicks="20" antialias="1" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.0084317" y="0.0104822" w="0.983137" h="0.979036"/>
+			<title text="Title" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="42"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="64" y="39" w="512" h="384" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0"/>
+			<curve type="1" z="21" table="lvl3" x="Un [v]" y="I-a [uA]" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="1" z="22" table="lvl3" x="Un [v]" y="I-9 [uA]" from="0" to="-1" line="0" lc="#e45252" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#e45252" lw="1" ls="0" brc="#e45252"/>
+			</curve>
+			<curve type="1" z="23" table="lvl3" x="Un [v]" y="I-13 [uA]" from="0" to="-1" line="0" lc="#2ad330" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#2ad330" lw="1" ls="0" brc="#2ad330"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-20" to="120" step="0" maj="8" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="400" to="900" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="409.784735812133" y="116.344647519582" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)&#10;\l(3)%(3)"/>
+		</tab>
+	</window>
+	<window type="1" name="Temnyproud" date="2460773.6140804" x="954" y="110" w="818" h="448" active="1" label="Temny proud" title="2">
+		<tab rows="30" cols="4" labels="0">
+			<col name="U-n [V]" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="862;808;768;696;646;592;560;474;422;"/>
+			<col name="Ia [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="3;2;1.5;1;0.2;0.1;0.1;0.05;0;"/>
+			<col name="I9 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0.23;0.16;0.11;0.07;0.05;0.03;0.03;0.02;0.01;"/>
+			<col name="I13 [uA]" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0.01;0;0;0;0;0;0;0;0;"/>
+		</tab>
+	</window>
+</qti>

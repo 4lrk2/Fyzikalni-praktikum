@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc13" dpi="120" arch="Win64" script="muParser" windows="10" expand="1">
+	<window type="1" name="Table1" date="2460646.5934636" x="0" y="0" w="1142" h="448">
+		<tab rows="34" cols="4" labels="0">
+			<col name="a" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="-20.75;-21;-21.3;-21.6;-22.5;-23.45;-24.85;-25;-26.4;-26.65;-34.25;"/>
+			<col name="a'" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="71.4;69.5;66.7;63.5;57.5;52.55;47.15;46;42.6;41.35;33.65;"/>
+			<col name="Beta" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="-3.3;-3.1;-3;-2.76;-2.43;-2.13;-1.81;-1.77;-1.55;-1.48;-1;"/>
+			<col name="Delta" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="49;47;43.5;40.5;33.25;27.35;21;19;14.8;12.4;0;"/>
+		</tab>
+	</window>
+	<window type="1" name="Table2" date="2460646.618171" x="292" y="350" w="1234" h="448">
+		<tab rows="30" cols="5" labels="0">
+			<col name="A" type="6" num="0" prec="13" plot="1" width="310" stat="0" data="69.85;69.85;69.85;69.85;69.85;69.85;69.85;69.85;69.85;69.85;"/>
+			<col name="A'" type="6" num="0" prec="13" plot="2" width="281" stat="0" data="96.1;92.7;91.25;89.15;88;86.5;85;82;80;78;"/>
+			<col name="R" type="6" num="0" prec="13" plot="2" width="280" stat="0" data="52.5;53.2;53.6;54;54.65;55;55.8;56.5;57.85;58.75;"/>
+			<col name="a" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;A&quot;)-col(&quot;R&quot;)" stat="0" muparser="1" data="17.35;16.65;16.25;15.85;15.2;14.85;14.05;13.35;12;11.1;"/>
+			<col name="a'" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;A'&quot;) -col(&quot;R&quot;)" stat="0" muparser="1" data="43.6;39.5;37.65;35.15;33.35;31.5;29.2;25.5;22.15;19.25;"/>
+		</tab>
+	</window>
+	<window type="1" name="spojka-sferometr" date="2460646.6276765" x="939" y="74" w="594" h="448">
+		<tab rows="30" cols="4" labels="0">
+			<col name="z =" type="6" num="0" prec="13" plot="1" width="100" stat="0" data=";;34.97;34.95;35;34.91;34.94;"/>
+			<col name="h1 (vypoukla)" type="6" num="0" prec="13" plot="2" width="141" stat="0" data="1.833;1.834;1.832;1.833;1.832;1.834;1.833;1.832;1.834;1.833;"/>
+			<col name="h2" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0;0.001;0;-0.001;0;0.001;0.001;-0.001;-0.001;0.001;"/>
+			<col name="1" type="6" num="0" prec="13" plot="2" width="100" stat="0"/>
+		</tab>
+	</window>
+	<window type="1" name="rozptylka" date="2460646.6306715" x="1574" y="29" w="547" h="535" active="1">
+		<tab rows="30" cols="2" labels="0">
+			<col name="h1 - zapustena" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.508;0.508;0.507;0.509;0.508;0.507;0.509;"/>
+			<col name="h2 - zapustena" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="0.507;0.507;0.508;0.506;0.506;0.509;0.507;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph1" date="2460647.6269015" x="1634" y="86" w="612" h="538" dpi="120">
+		<layout cw="594" ch="477" w="512" h="384" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="584" h="467" autoscale="1" maxMajorTicks="20" antialias="1" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00841751" y="0.0104822" w="0.983165" h="0.979036"/>
+			<title text="Title" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="42"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="64" y="39" w="512" h="384" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0"/>
+			<curve type="2" z="21" table="Table1" x="a" y="a'" from="0" to="-1" line="1" lc="#000000" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="2" z="22" table="Table1" x="a" y="Beta" from="0" to="-1" line="1" lc="#ff0000" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#ff0000" lw="1" ls="0" brc="#ff0000"/>
+			</curve>
+			<curve type="2" z="23" table="Table1" x="a" y="Delta" from="0" to="-1" line="1" lc="#aa007f" lw="2.5" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="3" lc="#aa007f" lw="1" ls="0" brc="#aa007f"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-10" to="80" step="0" maj="10" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-36" to="-20" step="0" maj="9" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="35"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="-35.6868884540117" y="77.6501305483029" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)&#10;\l(3)%(3)"/>
+		</tab>
+	</window>
+	<window type="6" name="spojka-sferometr-ColStats2" date="2460647.6713724" x="1526" y="624" w="903" h="141" label="Column Statistics of spojka-sferometr" title="2">
+		<tab rows="1" cols="18" labels="0" base="spojka-sferometr" stat="1" targets="0">
+			<col name="Col" type="1" format="" plot="1" width="53" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="115" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="131" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="140" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="139" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="59" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="58" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="55" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="40" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="80" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="49" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="49" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="54" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="131" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="123" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+	<window type="6" name="spojka-sferometr-ColStats3" date="2460647.6766058" x="1526" y="765" w="923" h="141" label="Column Statistics of spojka-sferometr" title="2">
+		<tab rows="1" cols="18" labels="0" base="spojka-sferometr" stat="1" targets="1">
+			<col name="Col" type="1" format="" plot="1" width="92" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="66" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="147" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="147" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="146" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="59" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="58" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="55" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="40" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="80" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="49" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="49" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="54" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="138" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="89" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+	<window type="6" name="spojka-sferometr-ColStats4" date="2460647.6767876" x="1527" y="884" w="884" h="141" label="Column Statistics of spojka-sferometr" title="2">
+		<tab rows="1" cols="18" labels="0" base="spojka-sferometr" stat="1" targets="2">
+			<col name="Col" type="1" format="" plot="1" width="53" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="66" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="147" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="147" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="146" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="59" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="58" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="55" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="40" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="80" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="51" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="49" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="54" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="131" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="115" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+	<window type="6" name="rozptylka-ColStats2" date="2460647.7131" x="0" y="798" w="1066" h="309" label="Column Statistics of rozptylka" title="2">
+		<tab rows="1" cols="18" labels="0" base="rozptylka" stat="1" targets="1">
+			<col name="Col" type="1" format="" plot="1" width="103" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="123" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="131" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="147" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="146" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="59" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="58" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="55" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="40" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="80" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="49" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="49" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="54" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="123" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="123" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+	<window type="6" name="rozptylka-ColStats3" date="2460647.7141746" x="1066" y="1025" w="934" h="141" label="Column Statistics of rozptylka" title="2">
+		<tab rows="1" cols="18" labels="0" base="rozptylka" stat="1" targets="0">
+			<col name="Col" type="1" format="" plot="1" width="103" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="66" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="66" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="147" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="147" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="146" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="59" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="63" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="58" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="60" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="55" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="40" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="80" stat="15" comment="Median"/>
+			<col name="Q1" type="6" num="0" prec="13" plot="2" width="49" stat="16" comment="Q1 (1st quartile)"/>
+			<col name="Q3" type="6" num="0" prec="13" plot="2" width="49" stat="17" comment="Q3 (3rd quartile)"/>
+			<col name="IQR" type="6" num="0" prec="13" plot="2" width="54" stat="18" comment="Interquartile range"/>
+			<col name="Skewness" type="6" num="0" prec="13" plot="2" width="98" stat="19" comment="Skewness"/>
+			<col name="Kurtosis" type="6" num="0" prec="13" plot="2" width="123" stat="20" comment="Kurtosis"/>
+		</tab>
+	</window>
+</qti>
