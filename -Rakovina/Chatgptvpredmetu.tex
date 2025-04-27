@@ -1,0 +1,131 @@
+% Hlavicka pro protokoly z fyzikalniho praktika.
+% Verze pro: LaTeX
+% Verze hlavicky: 22. 2. 2007
+% Autor: Ustav fyziky kondenzovanych latek
+% Ke stazeni: www.physics.muni.cz/ufkl/Vyuka/
+% Licence: volne k pouziti, nejlepe k vcasnemu odevzdani protokolu z Vaseho mereni.
+
+
+\documentclass[czech,11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, animate}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{placeins}
+\graphicspath{ {./images/} }
+
+
+\usepackage[
+style=iso-numeric, % nebo iso-authoryear podle toho co chceš
+backend=biber      % důležité!
+]{biblatex}
+
+
+
+
+\addbibresource{ref.bib}
+
+
+
+%%% Nemente:
+\usepackage[margin=2cm]{geometry}
+
+%%% Nemente - konec.
+
+
+%%%%%%%%%%% Doplnte pozadovane polozky:
+
+%opening
+\title{Nádorová onemocnění a rakovina u domestikovaných drobných savců }
+\author{Teodor Duraković}        
+%%%%%%%%%%% Konec pozadovanych polozek.
+%%%%%%%%%%% Uzitecne balicky:
+
+%%%%%% Zamezeni parchantu:
+\widowpenalty 10000 \clubpenalty 10000 \displaywidowpenalty 10000
+%%%%%% Parametry pro moznost vsazeni vetsiho poctu obrazku na stranku
+\setcounter{topnumber}{3}	  % max. pocet floatu nahore (specifikace t)
+\setcounter{bottomnumber}{3}	  % max. pocet floatu dole (specifikace b)
+\setcounter{totalnumber}{6}	  % max. pocet floatu na strance celkem
+\renewcommand\topfraction{0.9}	  % max podil stranky pro floaty nahore
+\renewcommand\bottomfraction{0.9} % max podil stranky pro floaty dole
+\renewcommand\textfraction{0.1}	  % min podil stranky, ktery musi obsahovat text
+\intextsep=8mm \textfloatsep=8mm  %\intextsep pro ulozeni [h] floatu a \textfloatsep pro [b] or [t]
+
+% Tecky za cisly sekci:
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}.}
+% Jednopismenna mezera mezi cislem a nazvem kapitoly:
+\makeatletter \def\@seccntformat#1{\csname the#1\endcsname\hspace{1ex}} \makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zacatek dokumentu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Nemente:
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	
+	
+
+	\maketitle
+
+		
+	
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% konec Nemente.
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Zacatek textu vlastniho protokolu
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+
+	
+
+	
+	Nádorová onemocnění se u domestikovaných drobných savců vyskytují podobně často jako u lidí. Pro potkany jsou nádory (konkrétně na mléčné žláze) jednou z nejčastějších chorob \cite{UH}, u samic králíka starších čtyř let se v 50-80 $\%$ případů objevují Adenomy a adenokarcinomy dělohy \cite {duchek, cavl, Wiley}. U morčat je jedním z nejčastěji se vyskytujících nádorů lymfosarkom \cite{caviai}. Opět jako u lidí lze sledovat nárůst těchto onemocnění oproti minulosti, což lze vysvětlit poměrně jednoduše; domestikované druhy se dožívají vyššího věku, což samo o~sobě riziko onkologických chorob zvyšuje.
+	
+	K onemocněním mazlíčků má člověk obecně jiný přístup než k chorobám vlastním, totéž platí u samotných nádorů. Přestože máme tendenci se o chovaná zvířata starat a zajistit jim co nejpohodlnější život, preventivní screeningy u nich nejsou běžnou praxí. Situace se sice mění u větších zvířat, zejména psů, pro které jsou testy již dostupné \cite{veteo2024nuq}, u malých savců k vyšetření a diagnostice dochází až po výskytu zdravotních potíží. Diagnostika sama o sobě nebývá zásadním problémem. CT a MRI se u drobných savců často neprovádějí, zvířata jsou malá, cena vyšetření je vysoká a onemocnění lze často diagnostikovat jednoduššími a~levnějšími způsoby (palpace, ultrasonografie, aspirační biopsie...). V tomto případě však právě důsledkem nevčasné diagnózy (potíže jsou řešeny až při zhoršení zdravotního stavu zvířete) onemocnění může být podchyceno až příliš pozdě, léčba při následné rychlé progresi již není efektivní.
+	
+	Samotná léčba je v této situaci největším dilematem. Komplexní, delší metody léčby nejsou možné z důvodu relativně nízkého věku dožití zvířat, ostatní metody s sebou též nesou veliké komplikace. Léčba může být neúspěšná a její důsledky mohou být horší než samotné onemocnění. Zatímco péči o člena své rodiny člověk často věnuje podstatnou část svého života, u domácích zvířat většinou nezacházíme tak daleko - na rozdíl od lidí pro nás domácí mazlíček přeci jen je poněkud zaměnitelným. Dostáváme se tedy do situace, kdy si klademe otázku, jakou hodnotu má život našeho zvířete - kolik času, energie a peněz jsme ochotni investovat do jeho léčby? Častá asymetrie této investice může být důležitým prvkem v našem rozhodnutí, i proto se často uchylujeme k péči paliativního charakteru. Složitost určit míru trápení u mazlíčka celé situaci nepomáhá. Zvíře své utrpení nedokáže popsat, signály jsou jemné a často maskované. Jak v praxi zjistit, zda případná léčba skutečně funguje? Oproti větším savcům (psům a kočkám) jsou projevy diskomfortu a bolesti u drobných savců často mnohem obtížněji pozorovatelné, vývojem si proto nikdy nemůžeme být jisti, což též může být důvodem pro odklad léčby. Znovu se dostáváme ke strachu, že svými činy zvířeti ublížíme a opět nás tento argument může motivovat k boji spíše pasivnímu, zmírnění aktuální nepohody a umožnění komfortního dožití, místo aktivní léčby.
+	
+	V praxi lze nicméně vymezit dva opačné přístupy: Přístup konzervativní, sestávající se z paliativní léčby, případně eutanazie a přístup radikální, vycházející ze snahy o aktivní léčbu, nejčastěji prostřednictvím chirurgického odstranění tumoru. 
+	
+	Nelze jednoznačně určit, který přístup je správný. Samozřejmě záleží na konkrétní situaci, možnostech léčby, jejich účinnosti i prognóze v případě úspěšného zákroku. Konečné rozhodnutí ale vždy činí majitel zvířete, který musí nalézt odpovědi na všechny zmíněné otázky v tomto dilematu. Všechny se však redukují na jedinou, již explicitně položenou; jaká je pro nás hodnota života tohoto zvířete? Toto rozhodnutí může být pomalu těžší než u člověka, jelikož v daný moment máme plnou kontrolu nad cizím životem. Při rozhodování nesmíme podlehnout iluzi, že lze nalézt univerzálně správné řešení. V konečném důsledku je největším projevem péče schopnost respektovat, kdy je čas bojovat – a kdy je čas nechat odejít.
+	
+	
+
+		
+	\printbibliography		
+		
+		
+		
+		% Nakonec nezapomeňte projet text programem vlna nebo vlnka, např.
+		% 	vlna -m -l -n mojeuloha.tex
+		% nebo zkontrolovat a opravit jednopísmenné předložky na koncích řádků ručně.
+
+\end{document}

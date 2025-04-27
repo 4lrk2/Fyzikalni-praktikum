@@ -1,0 +1,19 @@
+Komparátor
+element s diodami máme zapojen tak, že zelená svítí, jakmile je větší napětí na Uref (spodní), červená při větším U1. 
+Na výstupu napětí závisí v podstatě pouze na zdroji napájejícím op-amp, získáváme -11.4 (při větším U1), 12.76 při větším Uref. Toto napětí
+není závislé na vstupních odporech - ty regulují jenom proud.
+
+Neinvertující zesilovač
+Odvodit vzorec zesílení U0 = U1 (1+R2/R1)
+
+Invertující
+posíláme 2V, osc čte 2.083V. (peak), u vystupu (-)4.266
+
+
+Propust
+kond 10n, R 100k, rA = 20k - zesileni -5. 7.3645 - hranice při 163Hz.
+Fázový posuv při nízkých freq 180 (jen protože invertuje), při vyšších freq (kolem 160 se kondenzátor začne projevovat (rozdíl circa +10 stupňů)
+
+Derivátor ampl. 1V.
+
+Derivace skutečně probíhá - ze sinu máme -cos, - je kvůli inverzi.

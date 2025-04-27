@@ -148,9 +148,9 @@
 
 		\section{Theory}
 		
-		Solid-state materials can be classified as conductors, semiconductors, or insulators, based on the structure of their electronic energy bands. In semiconductors, the valence band (filled with electrons) and the conduction band (empty at $0\,\mathrm{K}$) are separated by a relatively narrow forbidden band gap $E_g$. At room temperature, a small number of electrons gain sufficient thermal energy to transition from the valence band to the conduction band, becoming mobile charge carriers. This process also leaves behind mobile “holes” in the valence band.
+		Solid-state materials can be classified as conductors, semiconductors, or insulators, based on the structure of their electronic energy bands. In semiconductors, the valence band (filled with electrons) and the conduction band (empty at $0\,\mathrm{K}$) are separated by a relatively narrow forbidden band gap $E_g$. At room temperature, a small number of electrons gain sufficient thermal energy to transition from the valence band to the conduction band, becoming mobile charge carriers. This process also leaves mobile “holes” in the valence band behind.
 		
-		The width of the band gap $E_g$ is a fundamental property of semiconductors, as it determines the material's electrical and optical behavior. In this experiment, we determine $E_g$ for silicon and germanium based on the \emph{internal photoelectric effect}, which is the generation of electron-hole pairs due to absorption of photons.
+		The width of the band gap $E_g$ is a fundamental property of semiconductors, as it determines the material's electrical and optical behavior. In this experiment, we determine $E_g$ for silicon and germanium based on the \emph{internal photoelectric effect}, which is the generation of electron-hole pairs due to the absorption of photons.
 		
 		\subsection{Internal photoelectric effect}
 		
@@ -165,7 +165,7 @@
 	
 		
 		where  
-		$h = 6.626 \times 10^{-34} \, \mathrm{Js}$ is Planck's constant,  
+		$h = 4.1357 \times 10^{-15} \, \mathrm{eV\,s}$ is Planck's constant,  
 		$c = 3.00 \times 10^8 \, \mathrm{m/s}$ is the speed of light,  
 		$\lambda$ is the wavelength in meters.  
 		In electronvolts, this becomes:
@@ -187,7 +187,7 @@
 		\end{equation}
 		
 		
-		This normalized response $S(\lambda)$ reflects the sensitivity of the photodiode at given wavelengths. A non-zero value of $S(\lambda)$ indicates that the photon energy is sufficient to create electron-hole pairs, i.e.\ $E \geq E_g$.
+		This normalized response $S(\lambda)$ reflects the sensitivity of the photodiode at given wavelengths. A non-zero value of $S(\lambda)$ indicates that the photon energy is sufficient to create electron-hole pairs, i.e., \ $E \geq E_g$.
 		
 		\subsection{Determination of the band gap}
 		
@@ -204,7 +204,7 @@
 		The resulting $E_g$ values for silicon and germanium can then be compared to literature values\cite{NIST}  (approximately $E_{g,\mathrm{Si}} \approx 1.1 \, \mathrm{eV}$, $E_{g,\mathrm{Ge}}\approx 0.66 \, \mathrm{eV}$) to assess the accuracy of the measurement.
 		
 		\section{Results}
-		For calculating the normalised photovoltage response, it is necessary to extrapolate the data for the lamp's spectral radiation intensity. This is done by fitting a third-order polynomial on the discrete data from the manual's appendix. We get a relation visible on Fig. 1:
+		For calculating the normalised photovoltage response, it is necessary to extrapolate the data for the lamp's spectral radiation intensity. This is done by fitting a third-order polynomial on the discrete data from the manual's appendix. We get a relation illustrated on Fig. 1:
 		
 		\begin{figure}[H]
 			\centering
@@ -235,9 +235,55 @@
 		\end{gather*}
 	
 		\section{Conclusion}
-		Even though our measured data was affected by significant noise (especially measurements for Ge for energies lower than $1.0\, \mathrm{eV}$) which we are not able to retrospectively explain, we have successfully acquired the band gap values for both silicon and germanium. By comparing our results to literature \cite{NIST}, we can see that our results are within satisfactory deviation from the real values.
+		Even though our measured data was affected by significant noise (especially measurements for Ge for energies lower than $1.0\, \mathrm{eV}$) which we are not able to explain, we have successfully acquired the band gap values for both silicon and germanium. By comparing our results to literature \cite{NIST}, we can see that our results are within satisfactory deviation from the real values. This deviation can be explained by our voltage measurement and monochromator resolution, the interpolation of the halogen lamp's spectral intensity distribution - we cannot be sure that the distribution is constant over the lamp's lifespan.
 	
-		
+	\end{multicols}
+		\section{Appendix - measured data}
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{rr|rr}
+				\multicolumn{2}{c}{Germanium} & \multicolumn{2}{c}{Silicon}                 \\ \hline
+				$\lambda \,\mathrm{[nm]}$     & $U \,\mathrm{[mV]}$     & $\lambda \,\mathrm{[nm]}$         & $U \,\mathrm{[mV]}$               \\ \hline
+				880              & 0.930      & 700                  & 0.900                \\
+				900              & 1.230      & 750                  & 1.350                \\
+				920              & 1.560      & 800                  & 1.800                \\
+				940              & 2.010      & 821                  & 2.100                \\
+				960              & 2.400      & 852                  & 2.700                \\
+				980              & 2.850      & 872                  & 3.300                \\
+				1000             & 3.300      & 885                  & 3.900                \\
+				1025             & 3.750      & 894                  & 4.500                \\
+				1050             & 4.350      & 910                  & 4.200                \\
+				1075             & 4.800      & 922                  & 5.700                \\
+				1100             & 5.250      & 940                  & 6.600                \\
+				1125             & 5.610      & 964                  & 7.500                \\
+				1150             & 5.940      & 975                  & 7.800                \\
+				1175             & 6.150      & 985                  & 8.100                \\
+				1185             & 5.700      & 1000                 & 8.100                \\
+				1200             & 6.000      & 1015                 & 7.800                \\
+				1225             & 6.960      & 1020                 & 7.500                \\
+				1250             & 7.410      & 1025                 & 7.260                \\
+				1275             & 7.740      & 1050                 & 5.340                \\
+				1300             & 7.860      & 1075                 & 3.270                \\
+				1325             & 7.950      & 1100                 & 2.040                \\
+				1350             & 8.160      & 1125                 & 1.170                \\
+				1362.5           & 7.740      & 1150                 & 0.540                \\
+				1375             & 8.610      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1400             & 6.240      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1425             & 7.230      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1450             & 8.100      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1475             & 7.860      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1500             & 6.750      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1550             & 4.050      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1600             & 3.450      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1700             & 1.500      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1750             & 1.140      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1800             & 1.350      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1850             & 0.630      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1900             & 0.300      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1950             & 0.060      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+				1975             & 0.000      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ 
+			\end{tabular}
+		\end{table}
 
 		
 
@@ -247,5 +293,4 @@
 		% Nakonec nezapomeňte projet text programem vlna nebo vlnka, např.
 		% 	vlna -m -l -n mojeuloha.tex
 		% nebo zkontrolovat a opravit jednopísmenné předložky na koncích řádků ručně.
-	\end{multicols}
 \end{document}
