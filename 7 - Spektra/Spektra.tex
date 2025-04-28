@@ -54,7 +54,7 @@
 \semestr={IV}                 % nahradte semestrem, ve kterem studujete
 
 \cisloulohy={7}               % nahradte cislem merene ulohy
-\jmenoulohy={Určení teploty elektrického oblouku a OH radikálu}           % nahradte vlhkosti vzduchu pri mereni (v %)
+\jmenoulohy={{\large Určení teploty elektrického oblouku a OH radikálu}}           % nahradte vlhkosti vzduchu pri mereni (v %)
 
 %%%%%%%%%%% Konec pozadovanych polozek.
 
@@ -251,7 +251,7 @@
 
 		\end{figure}
 		
-		Následně přiřazujeme detekované čáry k referenčním čarám v návodu, pro získání rel. intenzity integrujeme oblast pod špičkou. Pro integraci je nutno vymezit meze samotné čáry - jelikož se proces snažíme algoritmizovat a data nezpracovávat manuálně, meze definujeme tak, že pro každou čáru detekujeme i Full Width Half Maxmum a samotné meze jako body vzdálené od středu o $1.625\cdot \mathrm{FWHM}$. Zpracováním získáváme výsledek viditelný na obr. 3.
+		Následně přiřazujeme detekované čáry k referenčním čarám v návodu, pro získání rel. intenzity integrujeme oblast pod špičkou. Pro integraci je nutno vymezit meze samotné čáry - jelikož se proces snažíme algoritmizovat a data nezpracovávat manuálně, meze definujeme tak, že pro každou čáru detekujeme i Full Width Half Maxmum a samotné meze jako body vzdálené od středu o $1.625\cdot \mathrm{FWHM}$ - tuto hodnotu volíme, jelikož jsou při ní správně vymezeny veškeré špičky bez složitější analýzy. Zpracováním získáváme výsledek viditelný na obr. 3.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{spectrum3}
