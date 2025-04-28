@@ -54,7 +54,7 @@
 \semestr={IV}                 % nahradte semestrem, ve kterem studujete
 
 \cisloulohy={7}               % nahradte cislem merene ulohy
-\jmenoulohy={Určení teploty elektrického oblouku}           % nahradte vlhkosti vzduchu pri mereni (v %)
+\jmenoulohy={Určení teploty elektrického oblouku a OH radikálu}           % nahradte vlhkosti vzduchu pri mereni (v %)
 
 %%%%%%%%%%% Konec pozadovanych polozek.
 
@@ -171,7 +171,7 @@
 			I_{mn} \sim \frac{A_{mn} g_m}{\lambda_{mn}} \cdot \exp\left(-\frac{E_m}{kT}\right)		
 		\end{equation}
 		
-		kde $I_{mn}$ je relativní intenzita čáry, $\lambda_{mn}$ vlnová délka, $A_{mn}$ pravděpodobnost přechodu (Einsteinův koeficient), $g_m$ statistická váha horní hladiny, $E_m$ excitační energie horní hladiny a $k$ je Boltzmannova konstanta, $T$ teplota.
+		kde $I_{mn}$ je relativní intenzita čáry, $\lambda_{mn}$ vlnová délka, $A_{mn}$ pravděpodobnost přechodu (Einsteinův koeficient spontánní emise), $g_m$ statistická váha horní hladiny, $E_m$ excitační energie horní hladiny a $k$ je Boltzmannova konstanta, $T$ teplota.
 		
 		
 		Po úpravách získáme vztah vhodný pro lineární závislost tzv. pyrometrické přímky:
@@ -223,7 +223,7 @@
 		
 		\subsection{Vyhodnocení a software}
 		
-		Při praktickém vyhodnocení se provádí je nutná správná identifikace spektrálních čar (včetně případného posunu) a odečtení temného proudu. Zatímco Temný proud lze eliminovat bez referenčních dat, posun spektrálních čar je nutno vyvodit za pomocí reference.
+		Při praktickém vyhodnocení se provádí je nutná správná identifikace spektrálních čar (včetně případného posunu) a odečtení temného signálu. Zatímco temný signál lze eliminovat bez referenčních dat, posun spektrálních čar je nutno vyvodit za pomocí reference.
 
 		
 		Pro identifikaci rotační struktury spektra OH se využívá programů \textbf{SPAN 1.7} a \textbf{Lifbase 2.1} – první umožňuje analýzu naměřeného spektra, druhý poskytuje simulované spektrum pro orientaci. Hodnota rotační konstanty použitá v úloze je:
@@ -242,12 +242,12 @@
 			\caption{Spektrum obloukového výboje železa - závislost rel. intenzity na vlnové délce}
 
 		\end{figure}
-		Pro kompenzaci temného proudu využíváme oblasti bez spektrálních čar. Detekcí vrcholů nalezneme potenciální spektrální čáry, poté je přiřadíme k tabulce v návodu\cite{navod}. Získáváme data na obr. 2:
+		Pro kompenzaci temného signálu využíváme oblasti bez spektrálních čar - zde konkrétně plochou oblast kolem vlnové délky 450 nm. Detekcí vrcholů nalezneme potenciální spektrální čáry, poté je přiřadíme k tabulce v návodu\cite{navod}. Získáváme data na obr. 2:
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{spectrum2}
-			\caption{Spektrum obloukového výboje železa - po odstranění temného proudu a detekci špiček}
+			\caption{Spektrum obloukového výboje železa - po odstranění temného signálu a detekci špiček}
 
 		\end{figure}
 		
@@ -257,7 +257,7 @@
 			\includegraphics[width=0.9\linewidth]{spectrum3}
 			\caption{Spektrum obloukového výboje železa - fialové oblasti znázorňují meze integrace}			
 		\end{figure}
-		Zároveň lze měřit odchylku detekovaných čar od čar referenčních, získáváme $\Delta \lambda = 0.084\pm 0.151$. Odchylka od referenčních dat tedy není primárně způsobena posunem celého spektra. Ze závislosti odchylky na vlnové délce pozorujeme, že s rostoucí vlnovou délkou roste i odchylka (obr. 4). Lze tedy předpokládat, že jsou data "roztažena", odchylka roste od bodu, který jsme lineární regresí získali jako průsečík osy x.
+		Zároveň lze měřit odchylku detekovaných čar od čar referenčních, získáváme \\ $\Delta \lambda = 0.084\pm 0.151 \,\mathrm{nm}$. Odchylka od referenčních dat tedy není primárně způsobena posunem celého spektra. Ze závislosti odchylky na vlnové délce pozorujeme, že s rostoucí vlnovou délkou roste i odchylka (obr. 4). Lze tedy předpokládat, že jsou data "roztažena", odchylka roste od bodu, který jsme lineární regresí získali jako průsečík osy x.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{zavislost}
@@ -272,6 +272,11 @@
 		\begin{equation*}
 			T_{\mathrm{Fe}} = 5729 \pm 564 \,\mathrm{K}
 		\end{equation*}
+		Při zpracování v programu SPAN získáváme teplotu:
+		\begin{equation*}
+			T_{\mathrm{Fe}} = 5624 \pm 965 \,\mathrm{K}
+		\end{equation*}
+		Zabudovaná funkce kalkulace teploty nám nefungovala, proto jsme tuto teplotu získali znovu kalkulací intenzit a následnou tvorbou pyrometrické přímky. Vysoká nejistota vychází mj. ze skutečnosti, že jsme tímto způsobem získali intenzitu relativně nízkého počtu čar.
 		\subsection{Rotační teplota molekuly OH}
 		Pro analýzu spektra molekuly OH nejdříve generujeme referenční data tak, jak je uvedeno v návodu. Okamžitě pozorujeme velký rozdíl mezi měřenými a referenčními (simulovanými) daty, jak je vidět na Obr. 6, odchylka zde dosahuje až několika nanometrů.
 		\begin{figure}[H]
@@ -279,7 +284,7 @@
 			\includegraphics[width=0.9\linewidth]{srovnani}
 			\caption{Naměřené a simulované spektrum OH}			
 		\end{figure}
-		Kalibraci provádíme obdobným způsobem, jako v předchozí úloze. Srovnáním největších špiček určíme odchylku, lineárním fitem závislosti odchylky na vlnové délce (původní, nekalibrované) z konstant regrese určíme kalibrační funkci, kterou aplikujeme na původní vlnové délky naměřených dat. Zároveň odstraňujeme hodnoty temného proudu, stejným způsobem jako v předchozí úloze. Srovnání kalibrovaného a simulovaného spektra je tímto úspěšně provedeno, jak lze ověřit na Obr. 7.
+		Kalibraci provádíme obdobným způsobem, jako v předchozí úloze. Srovnáním největších špiček určíme odchylku, lineárním fitem závislosti odchylky na vlnové délce (původní, nekalibrované) z konstant regrese určíme kalibrační funkci, kterou aplikujeme na původní vlnové délky naměřených dat. Zároveň odstraňujeme hodnoty temného signálu (v tomto případě z oblasti vlnových délek kolem 300 nm), stejným způsobem jako v předchozí úloze. Srovnání kalibrovaného a simulovaného spektra je tímto úspěšně provedeno, jak lze ověřit na Obr. 7.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{Spectrum4}
@@ -292,7 +297,7 @@
 			\caption{Pyrometrická přímka OH radikálu}			
 		\end{figure}
 		\begin{equation*}
-			T_{\mathrm{OH} = 280 \pm 1 \,\mathrm{K}}
+			T_{\mathrm{OH}} = 280 \pm 1 \,\mathrm{K}
 		\end{equation*}
 		\subsubsection{Zpracování dat v programu SPAN}
 		
@@ -305,7 +310,7 @@
 		
 		
 		\section{Závěr}
-		Úspěšně se nám podařilo stanovit teplotu elektrického výboje Fe - získaná hodnota pro teplotu výboje dává smysl. Stejně tak se nám podařilo určit rotační teplotu molekuly OH, jejíž hodnotu se nám zároveň podařilo ověřit, respektive replikovat, softwarem SPAN.
+		Úspěšně se nám podařilo stanovit teplotu elektrického výboje Fe - získaná hodnota pro teplotu výboje dává smysl - teplota elektrického oblouku dosahuje hodnot 3\,000 -- 8\,000 K \cite{vut}. Stejně tak se nám podařilo určit rotační teplotu molekuly OH, jejíž hodnotu se nám zároveň podařilo ověřit, respektive replikovat, softwarem SPAN.
 		
 \printbibliography
 \newpage

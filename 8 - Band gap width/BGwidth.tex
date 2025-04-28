@@ -148,7 +148,7 @@
 
 		\section{Theory}
 		
-		Solid-state materials can be classified as conductors, semiconductors, or insulators, based on the structure of their electronic energy bands. In semiconductors, the valence band (filled with electrons) and the conduction band (empty at $0\,\mathrm{K}$) are separated by a relatively narrow forbidden band gap $E_g$. At room temperature, a small number of electrons gain sufficient thermal energy to transition from the valence band to the conduction band, becoming mobile charge carriers. This process also leaves mobile “holes” in the valence band behind.
+		Solid-state materials can be classified as conductors, semiconductors, or insulators, based on the structure of their electronic energy bands. In semiconductors, the valence band (filled with electrons) and the conduction band (empty at $0\,\mathrm{K}$) are separated by a relatively narrow forbidden band gap $E_g$. At room temperature, few electrons gain sufficient thermal energy to transition from the valence band to the conduction band, becoming mobile charge carriers. This process also leaves mobile “holes” behind in the valence band.
 		
 		The width of the band gap $E_g$ is a fundamental property of semiconductors, as it determines the material's electrical and optical behavior. In this experiment, we determine $E_g$ for silicon and germanium based on the \emph{internal photoelectric effect}, which is the generation of electron-hole pairs due to the absorption of photons.
 		
@@ -230,63 +230,101 @@
 		\]
 		The band gap values are:
 		\begin{gather*}
-			E_{g_\mathrm{Ge}} = 0.64 \pm 0.19\,\mathrm{eV}\\
-			E_{g_\mathrm{Si}} = 1.087 \pm 0.15 \,\mathrm{eV}
+			E_{g_\mathrm{Ge}} = 0.64 \pm 0.19\,\mathrm{eV} = 1.0 \pm 0.3 \cdot 10^{-19}  \,\mathrm{J}\\
+			E_{g_\mathrm{Si}} = 1.075 \pm 0.15 \,\mathrm{eV} = 1.7 \pm 0.2 \cdot 10^{-19} \,\mathrm{J}
 		\end{gather*}
 	
 		\section{Conclusion}
-		Even though our measured data was affected by significant noise (especially measurements for Ge for energies lower than $1.0\, \mathrm{eV}$) which we are not able to explain, we have successfully acquired the band gap values for both silicon and germanium. By comparing our results to literature \cite{NIST}, we can see that our results are within satisfactory deviation from the real values. This deviation can be explained by our voltage measurement and monochromator resolution, the interpolation of the halogen lamp's spectral intensity distribution - we cannot be sure that the distribution is constant over the lamp's lifespan.
+		Even though our measured data was affected by significant noise (especially measurements for Ge for energies lower than $1.0\, \mathrm{eV}$) which we are not able to explain, we have successfully acquired the band gap values for both silicon and germanium. By comparing our results to literature \cite{NIST}, we can see that our results are within satisfactory deviation from the real values. This deviation can be explained by our voltage measurement and monochromator resolution, the interpolation of the halogen lamp's spectral intensity distribution - we cannot be sure that the distribution is constant over the lamp's lifespan. The experiment is also dependent on temperature.
 	
-	\end{multicols}
+
 		\section{Appendix - measured data}
+		
 		\begin{table}[H]
-			\centering
-			\begin{tabular}{rr|rr}
-				\multicolumn{2}{c}{Germanium} & \multicolumn{2}{c}{Silicon}                 \\ \hline
-				$\lambda \,\mathrm{[nm]}$     & $U \,\mathrm{[mV]}$     & $\lambda \,\mathrm{[nm]}$         & $U \,\mathrm{[mV]}$               \\ \hline
-				880              & 0.930      & 700                  & 0.900                \\
-				900              & 1.230      & 750                  & 1.350                \\
-				920              & 1.560      & 800                  & 1.800                \\
-				940              & 2.010      & 821                  & 2.100                \\
-				960              & 2.400      & 852                  & 2.700                \\
-				980              & 2.850      & 872                  & 3.300                \\
-				1000             & 3.300      & 885                  & 3.900                \\
-				1025             & 3.750      & 894                  & 4.500                \\
-				1050             & 4.350      & 910                  & 4.200                \\
-				1075             & 4.800      & 922                  & 5.700                \\
-				1100             & 5.250      & 940                  & 6.600                \\
-				1125             & 5.610      & 964                  & 7.500                \\
-				1150             & 5.940      & 975                  & 7.800                \\
-				1175             & 6.150      & 985                  & 8.100                \\
-				1185             & 5.700      & 1000                 & 8.100                \\
-				1200             & 6.000      & 1015                 & 7.800                \\
-				1225             & 6.960      & 1020                 & 7.500                \\
-				1250             & 7.410      & 1025                 & 7.260                \\
-				1275             & 7.740      & 1050                 & 5.340                \\
-				1300             & 7.860      & 1075                 & 3.270                \\
-				1325             & 7.950      & 1100                 & 2.040                \\
-				1350             & 8.160      & 1125                 & 1.170                \\
-				1362.5           & 7.740      & 1150                 & 0.540                \\
-				1375             & 8.610      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1400             & 6.240      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1425             & 7.230      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1450             & 8.100      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1475             & 7.860      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1500             & 6.750      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1550             & 4.050      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1600             & 3.450      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1700             & 1.500      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1750             & 1.140      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1800             & 1.350      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1850             & 0.630      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1900             & 0.300      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1950             & 0.060      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
-				1975             & 0.000      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ 
+			\begin{tabular}{rr|rrr}
+				\hline
+				$\lambda$ [nm] & U [mV] & D($\lambda$) & S($\lambda$) $\cdot 10^6$ & E [eV] \\
+				\hline
+				
+				880.000 & 0.930 & 222.529 & 4.179 & 1.410 \\
+				900.000 & 1.230 & 206.903 & 5.945 & 1.379 \\
+				920.000 & 1.560 & 193.484 & 8.063 & 1.349 \\
+				940.000 & 2.010 & 182.079 & 11.039 & 1.320 \\
+				960.000 & 2.400 & 172.493 & 13.914 & 1.292 \\
+				980.000 & 2.850 & 164.531 & 17.322 & 1.266 \\
+				1000.000 & 3.300 & 158.000 & 20.886 & 1.241 \\
+				1025.000 & 3.750 & 151.551 & 24.744 & 1.210 \\
+				1050.000 & 4.350 & 146.655 & 29.661 & 1.182 \\
+				1075.000 & 4.800 & 142.931 & 33.583 & 1.154 \\
+				1100.000 & 5.250 & 140.000 & 37.500 & 1.128 \\
+				1125.000 & 5.610 & 137.483 & 40.805 & 1.103 \\
+				1150.000 & 5.940 & 135.000 & 44.000 & 1.079 \\
+				1175.000 & 6.150 & 132.284 & 46.491 & 1.056 \\
+				1185.000 & 5.700 & 131.167 & 43.456 & 1.047 \\
+				1200.000 & 6.000 & 129.517 & 46.326 & 1.034 \\
+				1225.000 & 6.960 & 126.991 & 54.807 & 1.013 \\
+				1250.000 & 7.410 & 125.000 & 59.280 & 0.993 \\
+				1275.000 & 7.740 & 123.709 & 62.566 & 0.973 \\
+				1300.000 & 7.860 & 122.766 & 64.024 & 0.954 \\
+				1325.000 & 7.950 & 121.689 & 65.330 & 0.936 \\
+				1350.000 & 8.160 & 120.000 & 68.000 & 0.919 \\
+				1362.500 & 7.740 & 118.808 & 65.147 & 0.911 \\
+				1375.000 & 8.610 & 117.484 & 73.286 & 0.902 \\
+				1400.000 & 6.240 & 115.000 & 54.261 & 0.886 \\
+				1425.000 & 7.230 & 113.394 & 63.760 & 0.871 \\
+				1450.000 & 8.100 & 112.393 & 72.069 & 0.856 \\
+				1475.000 & 7.860 & 111.446 & 70.528 & 0.841 \\
+				1500.000 & 6.750 & 110.000 & 61.364 & 0.827 \\
+				1550.000 & 4.050 & 104.256 & 38.847 & 0.800 \\
+				1600.000 & 3.450 & 95.000 & 36.316 & 0.775 \\
+				1700.000 & 1.500 & 70.000 & 21.429 & 0.730 \\
+				1750.000 & 1.140 & 57.292 & 19.898 & 0.709 \\
+				1800.000 & 1.350 & 46.000 & 29.348 & 0.689 \\
+				1850.000 & 0.630 & 35.000 & 18.000 & 0.671 \\
+				1900.000 & 0.300 & 15.000 & 20.000 & 0.653 \\
+				1950.000 & 0.060 & -25.334 & -2.368 & 0.636 \\
+				1975.000 & 0.000 & -56.669 & -0.000 & 0.628 \\
+				
 			\end{tabular}
+			\caption{Data for Ge}
 		\end{table}
+		
+		\begin{table}[H]
+			\begin{tabular}{rr|rrr}
+				\hline
+				$\lambda$ [nm] & U [mV] & D($\lambda$) & S($\lambda$) $\cdot 10^6$& E [eV] \\
+				\hline
+				700 & 0.900 & 494.550 & 1.820 & 1.772 \\
+				750 & 1.350 & 391.319 & 3.450 & 1.654 \\
+				800 & 1.800 & 310.992 & 5.788 & 1.551 \\
+				821 & 2.100 & 283.353 & 7.411 & 1.511 \\
+				852 & 2.700 & 248.483 & 10.866 & 1.456 \\
+				872 & 3.300 & 229.441 & 14.383 & 1.423 \\
+				885 & 3.900 & 218.405 & 17.857 & 1.402 \\
+				894 & 4.500 & 211.350 & 21.292 & 1.388 \\
+				910 & 4.200 & 199.930 & 21.007 & 1.363 \\
+				922 & 5.700 & 192.256 & 29.648 & 1.346 \\
+				940 & 6.600 & 182.079 & 36.248 & 1.320 \\
+				964 & 7.500 & 170.777 & 43.917 & 1.287 \\
+				975 & 7.800 & 166.380 & 46.881 & 1.273 \\
+				985 & 8.100 & 162.772 & 49.763 & 1.260 \\
+				1000 & 8.100 & 158.000 & 51.266 & 1.241 \\
+				1015 & 7.800 & 153.923 & 50.675 & 1.222 \\
+				1020 & 7.500 & 152.705 & 49.114 & 1.216 \\
+				1025 & 7.260 & 151.551 & 47.905 & 1.210 \\
+				1050 & 5.340 & 146.655 & 36.412 & 1.182 \\
+				1075 & 3.270 & 142.931 & 22.878 & 1.154 \\
+				1100 & 2.040 & 140.000 & 14.571 & 1.128 \\
+				1125 & 1.170 & 137.483 & 8.510 & 1.103 \\
+				1150 & 0.540 & 135.000 & 4.000 & 1.079 \\
+				
+			\end{tabular}
+			\caption{Data for Si}
+\end{table}
+
 
 		
-
+	\end{multicols}
 	\printbibliography
 		
 		

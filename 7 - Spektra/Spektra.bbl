@@ -19,6 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{vut}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=01cff2f11ed1c0c39df8d9e0881113c6}{%
+           family={{Tadeáš Hartman}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{01cff2f11ed1c0c39df8d9e0881113c6}
+      \strng{fullhash}{01cff2f11ed1c0c39df8d9e0881113c6}
+      \strng{bibnamehash}{01cff2f11ed1c0c39df8d9e0881113c6}
+      \strng{authorbibnamehash}{01cff2f11ed1c0c39df8d9e0881113c6}
+      \strng{authornamehash}{01cff2f11ed1c0c39df8d9e0881113c6}
+      \strng{authorfullhash}{01cff2f11ed1c0c39df8d9e0881113c6}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{VUT, přístup: duben 2025}
+      \field{title}{{SPEKTROSKOPICKÁ ANALÝZA ELEKTRICKÉHO OBLOUKU}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.vut.cz/www_base/zav_prace_soubor_verejne.php?file_id=192473
+      \endverb
+      \verb{url}
+      \verb https://www.vut.cz/www_base/zav_prace_soubor_verejne.php?file_id=192473
+      \endverb
+    \endentry
     \entry{navod}{misc}{}
       \name{author}{1}{}{%
         {{hash=0616cf5714206ef1ef115c18a62f07d0}{%
@@ -44,7 +70,6 @@
       \field{year}{2025}
     \endentry
   \enddatalist
-  \missing{NIST}
 \endrefsection
 \endinput
 

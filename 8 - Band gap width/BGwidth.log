@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.4.8)  27 APR 2025 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.4.8)  28 APR 2025 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,9 +1055,14 @@ File: results.png Graphic file (type png)
 <use results.png>
 Package pdftex.def Info: results.png  used on input line 218.
 (pdftex.def)             Requested size: 213.16214pt x 127.16415pt.
- [2 <./D.png> <./results.png>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-90.
+
+Overfull \hbox (6.60559pt too wide) in paragraph at lines 244--289
+[][] 
+ []
+
+[2 <./D.png> <./results.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+28.
 
 (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -1078,13 +1083,13 @@ Package logreq Info: Writing requests to 'BGwidth.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24429 strings out of 474485
- 435812 string characters out of 5743735
- 1948542 words of memory out of 5000000
- 46333 multiletter control sequences out of 15000+600000
+ 24431 strings out of 474485
+ 435845 string characters out of 5743735
+ 1974542 words of memory out of 5000000
+ 46334 multiletter control sequences out of 15000+600000
  579260 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,10n,131p,696b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,9n,131p,745b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\eccc1095.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -1112,9 +1117,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ad
 min/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 /Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb>
-Output written on BGwidth.pdf (3 pages, 292305 bytes).
+Output written on BGwidth.pdf (3 pages, 294728 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

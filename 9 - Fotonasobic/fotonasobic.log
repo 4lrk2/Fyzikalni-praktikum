@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.4.8)  17 APR 2025 01:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.4.8)  28 APR 2025 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1028,42 +1028,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--120
 [1
 
 {C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<tp.png, id=60, 611.4042pt x 395.3169pt>
+<tp.png, id=72, 611.4042pt x 395.3169pt>
 File: tp.png Graphic file (type png)
 <use tp.png>
 Package pdftex.def Info: tp.png  used on input line 217.
 (pdftex.def)             Requested size: 213.16214pt x 137.82613pt.
-<fig0.png, id=62, 570.2103pt x 426.393pt>
+<fig0.png, id=74, 570.2103pt x 426.393pt>
 File: fig0.png Graphic file (type png)
 <use fig0.png>
 Package pdftex.def Info: fig0.png  used on input line 228.
 (pdftex.def)             Requested size: 213.16214pt x 159.396pt.
-<fig1.png, id=63, 570.2103pt x 426.393pt>
+<fig1.png, id=75, 570.2103pt x 426.393pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
 Package pdftex.def Info: fig1.png  used on input line 232.
 (pdftex.def)             Requested size: 213.16214pt x 159.396pt.
-<fig2.png, id=64, 570.933pt x 426.393pt>
+ [2 <./tp.png> <./fig0.png>]
+<fig2.png, id=90, 570.933pt x 426.393pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
 Package pdftex.def Info: fig2.png  used on input line 239.
 (pdftex.def)             Requested size: 213.16214pt x 159.1943pt.
-<fig3.png, id=65, 570.933pt x 426.393pt>
+<fig3.png, id=91, 570.933pt x 426.393pt>
 File: fig3.png Graphic file (type png)
 <use fig3.png>
 Package pdftex.def Info: fig3.png  used on input line 241.
 (pdftex.def)             Requested size: 213.16214pt x 159.1943pt.
- [2 <./tp.png> <./fig0.png>]
-<fig4.png, id=80, 570.2103pt x 426.393pt>
+<fig4.png, id=92, 570.2103pt x 426.393pt>
 File: fig4.png Graphic file (type png)
 <use fig4.png>
 Package pdftex.def Info: fig4.png  used on input line 251.
 (pdftex.def)             Requested size: 213.16214pt x 159.396pt.
 
 
-LaTeX Warning: Empty bibliography on input line 266.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
 
-[3 <./fig1.png> <./fig2.png> <./fig3.png> <./fig4.png>] (fotonasobic.aux)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sigma' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+<fit5.png, id=93, 570.2103pt x 425.6703pt>
+File: fit5.png Graphic file (type png)
+<use fit5.png>
+Package pdftex.def Info: fit5.png  used on input line 264.
+(pdftex.def)             Requested size: 213.16214pt x 159.12582pt.
+[3 <./fig1.png> <./fig2.png> <./fig3.png> <./fig4.png>]
+
+LaTeX Warning: Empty bibliography on input line 273.
+
+[4 <./fit5.png>] (fotonasobic.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1073,7 +1091,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `fotonasobic.out' has not changed.
-(rerunfilecheck)             Checksum: 86475D5C1DB6BA6B46ED62571D4BF090;796.
+(rerunfilecheck)             Checksum: 11C3C9C8DC07A5ED66EF6D970E62EF83;1360.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                fotonasobic
@@ -1084,11 +1102,11 @@ Package logreq Info: Writing requests to 'fotonasobic.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24274 strings out of 474485
- 430994 string characters out of 5743735
- 1948542 words of memory out of 5000000
- 46195 multiletter control sequences out of 15000+600000
- 573501 words of font info for 68 fonts, out of 8000000 for 9000
+ 24301 strings out of 474485
+ 431352 string characters out of 5743735
+ 1947542 words of memory out of 5000000
+ 46215 multiletter control sequences out of 15000+600000
+ 575046 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,9n,131p,686b,1642s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
@@ -1103,15 +1121,16 @@ eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2074.pk> <C:\Users\Admin\AppData\Loca
 l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/Admin/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Admi
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/U
-sers/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.p
-fb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on fotonasobic.pdf (3 pages, 371241 bytes).
+sers/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on fotonasobic.pdf (4 pages, 412631 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 431 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

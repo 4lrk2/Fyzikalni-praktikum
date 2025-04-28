@@ -143,7 +143,7 @@
 	
 	\begin{multicols}{2}
 		\section{Zadání}
-		1. Stanovte závislost koeficientu sekundární emise na energii elektronů dopadajícíh na dynodu. Vyneste do grafu i závislost $\ln (\sigma/V) = f(V)$. Zjistěte, jestli koeficient sekundární emise $\sigma$ závisí na intenzitě osvětlení fotokatody.\\
+		1. Stanovte závislost koeficientu sekundární emise na energii elektronů dopadajících na dynodu. Vyneste do grafu i závislost $\ln (\sigma/V) = f(V)$. Zjistěte, jestli koeficient sekundární emise $\sigma$ závisí na intenzitě osvětlení fotokatody.\\
 		2. Stanovte a vyneste do grafu závislost integrální citlivosti fotonásobiče a zesílení fotonásobiče na napětí na násobiči $S = f(U_\text{n})\, \text{a} \,M = f(U_\text{n})$.\\
 		3. Stanovte integrální citlivost fotokatody $k = f(U_\text{n})$.\\
 		4. Prověřte vliv temného proudu na přesnost měření.
@@ -154,7 +154,7 @@
 		
 		Fotonásobič je vakuová elektrooptická součástka sloužící k detekci velmi slabých světelných signálů. Funguje na principu fotoemise a následného zesílení proudu pomocí sekundární emise elektronů na soustavě dynod. Jeho výstupní signál je úměrný dopadajícímu světelnému toku a použitým napětím, což jej činí mimořádně citlivým detektorem světla pro laboratorní i průmyslové aplikace.
 		
-		Fotoemise
+		\subsection{Fotoemise}
 		Při dopadu světla na fotokatodu dochází k uvolnění elektronů díky vnějšímu fotoefektu. Energie fotonů je přeměněna na kinetickou energii elektronu a překonání výstupní práce materiálu katody. Podle Einsteinova vztahu platí:
 		
 		\begin{equation} h\nu = w + \frac{1}{2}mv_0^2 \end{equation}
@@ -169,7 +169,7 @@
 		kde $I_f$ je proud z fotokatody, $\Phi$ je světelný tok a $k$ je integrální citlivost fotokatody.
 		
 	\subsection{Sekundární emise}
-		Elektrony emitované z fotokatody jsou urychleny napětím a dopadají na první dynodu, kde vyvolávají sekundární emisi. Tento proces se opakuje na každé další dynodě. Koeficient sekundární emise $\sigma$ je definován jako poměr počtu sekundárních elektronů k primárním:
+		Elektrony emitované z fotokatody jsou urychleny napětím a dopadají na první dynodu, kde vyvolávají sekundární emisi. Tento proces se opakuje na každé další dynodě. Koeficient sekundární emise $\sigma$ je definován jako poměr proudu sekundárních elektronů k primárním:
 		
 		\begin{equation} \sigma = \frac{I_{\text{sek}}}{I_{\text{prim}}} \end{equation}
 		
@@ -183,10 +183,10 @@
 		
 		\begin{equation} \sigma = \sqrt{\frac{I_{11}}{I_9}} \end{equation}
 		
-		Zesílení a citlivost fotonásobiče
-		Výsledný anodový proud $I_\mathrm{a}$	je dán zesílením primárního proudu z fotokatody. Za předpokladu, že všechny dynody mají stejný koeficient sekundární emise, platí:
+\subsection{Zesílení a citlivost fotonásobiče}
+		Výsledný anodový proud $I_\mathrm{a}$	je dán zesílením primárního  proudu $I_f$ z fotokatody. Za předpokladu, že všechny dynody mají stejný koeficient sekundární emise, platí:
 		
-		\begin{equation} I_{\text{a}} = \sigma^n \cdot I_{\text{f}} \end{equation}
+		\begin{equation} I_{\text{a}} = \sigma^n \cdot I_{\text{f}}, \end{equation}
 		
 		kde $n$ je počet dynod (v této úloze $n=13$).		
 		Zesílení fotonásobiče definujeme jako:
@@ -211,7 +211,7 @@
 		Fotonásobič vykazuje malý proud i bez dopadajícího světla, tzv. temný proud, způsobený především termoemisí. Tento proud je nutné při zpracování dat odečíst, zejména pokud je jeho velikost srovnatelná s měřenými hodnotami.
 		
 		\section{Měření}
-		Nejprve stanovíme hodnotu temných proudů. Z měření závislostí proudů na napětí fotonásobiče Získáváme data pro dynodové proudy i proud anody. Následně tato data fitujeme polynomem III. stupně pro získání spojité závislosti temného proudu na napětí fotonásobiče. Výsledek lze pozorovat na Obr. 1.
+		Nejprve stanovíme hodnotu temných proudů. Z měření závislostí proudů na napětí fotonásobiče získáváme data pro dynodové proudy i proud anody. Následně tato data fitujeme polynomem III. stupně pro získání spojité závislosti temného proudu na napětí fotonásobiče. Výsledek lze pozorovat na Obr. 1.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{tp}
@@ -257,7 +257,14 @@
 			k_{600} = 1880 \pm 30 \,\mathrm{\mu A \cdot lm ^{-1}}
 		\end{gather*}
 		
-		
+		\subsection{Závislost $\sigma$ na světelném toku}
+		Při vykreslení závislosti koeficientu sekundární emise na světelném toku (Obr. 7) pozorujeme klesání hodnoty koeficientu při větším světelném toku. Tento výsledek není očekáván a získaná data ani nelze brát jako důkaz skutečného poklesu, tento výsledek může být ovlivněn větším příspěvkem temných proudů pro malé hodnoty $\Phi$. I samotné odchylky směrnice fitované přímky dokazují, že je nejistota klesání poměrně vysoká.
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{fit5}
+			\caption{Závislost $\sigma$ na světelném toku}
+			
+		\end{figure}
 		
 		
 		\section{Závěr}

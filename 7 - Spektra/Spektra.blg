@@ -1,16 +1,14 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Spektra.blg'
-[138] biber-MSWIN64:340> INFO - === 
-[179] Biber.pm:419> INFO - Reading 'Spektra.bcf'
-[308] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
-[327] Biber.pm:4419> INFO - Processing section 0
-[340] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
-[390] bibtex.pm:1713> INFO - LaTeX decoding ...
-[398] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[438] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
-[438] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[438] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'cs-CZ'
-[440] bbl.pm:660> INFO - Writing 'Spektra.bbl' with encoding 'UTF-8'
-[441] bbl.pm:763> INFO - Output to Spektra.bbl
-[441] Biber.pm:131> WARN - I didn't find a database entry for 'NIST' (section 0)
-[441] Biber.pm:133> INFO - WARNINGS: 1
+[137] biber-MSWIN64:340> INFO - === 
+[183] Biber.pm:419> INFO - Reading 'Spektra.bcf'
+[328] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
+[347] Biber.pm:4419> INFO - Processing section 0
+[361] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
+[418] bibtex.pm:1713> INFO - LaTeX decoding ...
+[424] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[466] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[467] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[467] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'cs-CZ'
+[475] bbl.pm:660> INFO - Writing 'Spektra.bbl' with encoding 'UTF-8'
+[476] bbl.pm:763> INFO - Output to Spektra.bbl
